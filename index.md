@@ -1,6 +1,6 @@
 
-AuroraBoard has been mainly designed for competitive fighting games. It runs on top of your favorite streaming software that supports loading webpages, for example OBS or XSplit.
-AuroraBoard's default UI is made for presential tournaments featuring two cameras players, however this can easily be modified, the default UI is also made to be tintable, which means you can set the color of the UI from the software itself, all of this of course, can be customized without limits.
+OstaraBoard has been mainly designed for competitive fighting games. It runs on top of your favorite streaming software that supports loading webpages, for example OBS or XSplit.
+OstaraBoard's default UI is made for presential tournaments featuring two cameras players, however this can easily be modified, the default UI is also made to be tintable, which means you can set the color of the UI from the software itself, all of this of course, can be customized without limits.
 
 The default UI also includes Melee stuff, including but not limited to a picture of the king of the mews.
 
