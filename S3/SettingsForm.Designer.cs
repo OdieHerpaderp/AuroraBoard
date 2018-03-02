@@ -72,6 +72,7 @@
             this.ServerPortbox.Name = "ServerPortbox";
             this.ServerPortbox.Size = new System.Drawing.Size(52, 20);
             this.ServerPortbox.TabIndex = 1;
+            this.ServerPortbox.ValueChanged += new System.EventHandler(this.ServerPortbox_ValueChanged);
             // 
             // groupBox2
             // 

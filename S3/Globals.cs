@@ -9,6 +9,7 @@ namespace S3
     class Globals
     {
         public static InformationUpdate CurrentInformationUpdate;
+        public static BracketUpdate bracketInfo;
         public static Settings settings = new Settings();
     }
 }

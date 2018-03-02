@@ -54,5 +54,10 @@ namespace S3
         {
             Close();
         }
+
+        private void ServerPortbox_ValueChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

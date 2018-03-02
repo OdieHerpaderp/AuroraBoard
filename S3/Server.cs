@@ -23,7 +23,31 @@ namespace S3
         public string tournamentName;
         public string caster;
         public string streamer;
+        public string iconStyle;
+    }
+    public class BracketUpdate
+    {
+        public Bracket WSA;
+        public Bracket WSB;
+        public Bracket WF;
+        public Bracket GF;
+        public Bracket BR;
+        public Bracket LF;
+        public Bracket LSF;
+        public Bracket LQA;
+        public Bracket LQB;
+        public Bracket L8A;
+        public Bracket L8B;
 
+        public Bracket DWSA;
+        public Bracket DWSB;
+        public Bracket DWF;
+        public Bracket DGF;
+        public Bracket DBR;
+        public Bracket DLF;
+        public Bracket DLSF;
+        public Bracket DLQA;
+        public Bracket DLQB;
     }
 
     public class Player
@@ -34,6 +58,15 @@ namespace S3
         public int score;
         public Flag flag;
     }
+
+    public class Bracket
+    {
+        public string Player1;
+        public string Player2;
+        public int Player1score;
+        public int Player2score;
+    }
+
     public class Server : NancyModule
     {
         public Server()
@@ -41,6 +74,14 @@ namespace S3
             Get["/getCurrentValues"] = parameters =>
             {
                 InformationUpdate update = Globals.CurrentInformationUpdate;
+                string data = JsonConvert.SerializeObject(update);
+                Response response = (Response)data;
+                response.ContentType = "application/json";
+                return response;
+            };
+            Get["/getBracketValues"] = parameters =>
+            {
+                BracketUpdate update = Globals.bracketInfo;
                 string data = JsonConvert.SerializeObject(update);
                 Response response = (Response)data;
                 response.ContentType = "application/json";
