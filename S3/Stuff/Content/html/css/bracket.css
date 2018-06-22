@@ -1,0 +1,88 @@
+.header
+{
+	font-family: 'encode sans' !important;
+	font-size: 38px;
+	width:380px;
+	margin-top:22px;	
+    margin-bottom:32px; 
+    margin-left:-18px;
+    margin-right:-18px;
+    text-align:center;
+    color:#FFFFFF;
+}
+.match
+{
+	width:340px;	
+    border-radius: 8px;
+    border: 2px solid #AADD22;
+    background-color:rgba(100,200,144,0.2);
+    margin-bottom:16px;
+    box-shadow: 0 0 8px #BBFF33;    
+}
+.playerdiv
+{	
+    position:relative;
+    padding:3px;
+}
+.test
+{
+	font-family: 'encode sans', sans-serif;
+	margin-left:4px;
+	text-shadow:
+    -1px -1px 1px #112206,
+    1px -1px 1px #091501,
+    -1px 1px 1px #112206,
+    1px 1px 1px #091501,
+	-2px -2px 4px #112206,
+    2px -2px 4px #091501,
+    -2px 2px 4px #112206,
+    2px 2px 4px #091501;
+}
+.toast
+{
+	text-shadow:
+    -1px -1px 1px #336611,
+    1px 1px 1px #112206,
+    -1px 1px 1px #336611,
+    1px -1px 1px #112206,
+    -1.5px -1.5px 1px #336611,
+    1.5px 1.5px 1px #112206,
+	-4px -4px 6px #112206,
+    4px 4px 6px #336611;
+}
+.player
+{
+	border-radius: 4px;
+	border: 2px solid rgba(140,222,55,0.8);
+	vertical-align: middle;
+	font-size: 30px;
+	height:40px;
+	font-weight: 500;
+	background-color:rgba(44,66,55,0.6);
+	color:#FFFFFF;	
+    position:relative;
+    padding:2px;
+}
+.score
+{
+	text-align:center;
+	vertical-align: middle;
+	align-content: center;
+	width:30px;
+	height:40px;
+	font-family: 'encode sans' !important;
+	text-shadow:
+    -1px -1px 1px #336611,
+    1px 1px 1px #112206,
+    -1px 1px 1px #336611,
+    1px -1px 1px #112206,
+    -1.5px -1.5px 1px #336611,
+    1.5px 1.5px 1px #112206,
+	-3px -3px 3px #112206,
+    3px 3px 3px #336611,
+    0px 0px 8px #FFFFFF;
+	font-weight: 500;
+	margin-top: 2px;
+    position:relative;	
+    float:right;
+}

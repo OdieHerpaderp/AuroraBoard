@@ -1,3 +1,16 @@
+div
+{
+	text-shadow:
+    -1px -1px 0 #000,
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+    1px 1px 0 #000,
+	-2px -2px 2px #400,
+    2px -2px 2px #400,
+    -2px 2px 2px #400,
+    2px 2px 2px #400;	
+}
+
 .upLeftCharacterName {
 	position:absolute;
 	left: 0;
@@ -22,15 +35,24 @@
 .scoreboardContainerLeft
 {
 	position: absolute;
-	bottom: 60px;
+	top: -10px;
 	width: 570px;
 	left: 0%;
 }
+.flagL{
+	position: absolute;
+	right: 180px;
+}
+.flagR{
+	position: absolute;
+	left: 180px;
+}
 .content {
-	font-family: 'Montserrat', sans-serif;
-	left: -5%;
+	font-family: 'Encode Sans', sans-serif;
+	font-weight: 500;
+	left: 1%;
 	position:absolute;
-	text-align: center;
+	text-align: left;
 	top: 15px;
 	color: #fff;
 	font-size: 30px;
@@ -38,7 +60,8 @@
 	vertical-align: middle;
 }
 .contentDownRight {
-	font-family: 'Montserrat', sans-serif;
+	font-family: 'Encode Sans', sans-serif;
+	font-weight: 500;
 	left: -5%;
 	position:absolute;
 	text-align: center;
@@ -52,27 +75,30 @@
 	margin-bottom: 15px;
 }
 .contentTop {
-	font-family: 'Montserrat', sans-serif;
+	font-family: 'Encode Sans', sans-serif;
+	font-weight: 500;
 	left: 0%;
 	position:absolute;
 	text-align: center;
-	top: 11px;
+	top: 6px;
 	color: #fff;
-	font-size: 25px;
+	font-size: 28px;
 	width: 100%;
 	vertical-align: middle;
 }
 .upUI {
+	text-align: left;
 	position: absolute;
-	top: 0px;
-	left: 0%;
-	width: 560px;
+	bottom: 50px;
+	left: 20px;
+	width: 420px;
 }
 .upUIR {
+	text-align: right;
 	position: absolute;
-	top: 0px;
-	left: 740px;
-	width: 570px;
+	bottom: 50px;
+	left: 975px;
+	width: 420px;
 }
 .microphone {
 	
@@ -81,15 +107,16 @@
 {
 	position: absolute;
 	bottom: 50px;
-	right: 30px;
-	width: 500px;
+	right: 10px;
+	width: 420px;
 }
 .rightDown
 {
 	
 }
 .contentRightDown {
-	font-family: 'Montserrat', sans-serif;
+	font-family: 'Encode Sans', sans-serif;
+	font-weight: 500;
 	bottom: 0;
 	position:absolute;
 	text-align: center;
@@ -100,9 +127,11 @@
 	vertical-align: middle;
 }
 .contentRight {
-	font-family: 'Montserrat', sans-serif;
+	font-family: 'Encode Sans', sans-serif;
+	font-weight: 500;
 	position:absolute;
-	text-align: center;
+	right: 2%;
+	text-align: right;
 	top: 15px;
 	color: #fff;
 	font-size: 30px;
@@ -119,15 +148,12 @@
 	
 }
 .characterImgP2 {
-	font-family: 'Montserrat', sans-serif;
+	font-family: 'Encode Sans', sans-serif;
+	font-weight: 500;
 	position:absolute;
-	top: 14px;
-	right: 2%;
-	height: 40px;
-	transform:scale(-1,1);
-	-webkit-transform:scale(-1,1);
-	-moz-transform:scale(-1,1);
-	-o-transform:scale(-1,1);
+	top: 10px;
+	right: -16px;
+	height: 56px;
 }
 .player1StreamCamName
 {
@@ -135,7 +161,8 @@
 	top: 260px;
 	width: 500px;
 	right: 60px;
-	font-family: 'Montserrat', sans-serif;
+	font-family: 'Encode Sans', sans-serif;
+	font-weight: 500;
 	color: #fff;
 	font-size: 20px;
 	text-align: center;
@@ -147,37 +174,41 @@
 	top: 545px;
 	width: 500px;
 	right: 60px;
-	font-family: 'Montserrat', sans-serif;
+	font-family: 'Encode Sans', sans-serif;
+	font-weight: 500;
 	color: #fff;
 	font-size: 20px;
 	text-align: center;
 }
 .characterImgP1 {
-	font-family: 'Montserrat', sans-serif;
+	font-family: 'Encode Sans', sans-serif;
+	font-weight: 500;
 	position:absolute;
-	top: 14px;
-	left: 2%;
-	height: 40px;
+	top: 10px;
+	left: -16px;
+	height: 56px;
 }
 .flagImgP2 {
-	font-family: 'Montserrat', sans-serif;
+	font-family: 'Encode Sans', sans-serif;
+	font-weight: 500;
 	position:absolute;
-	top: 22px;
-	right: 2%;
+	top: 26px;
+	right: 2px;
 }
 .flagImgP1 {
-	font-family: 'Montserrat', sans-serif;
+	font-family: 'Encode Sans', sans-serif;
+	font-weight: 500;
 	position:absolute;
-	top: 22px;
-	left: 2%;
+	top: 26px;
+	left: 2px;
 }
 .scoreboardBottomRight {
 
 }
 .scoreboardContainerRight{
 	position: absolute;
-	bottom: 60px;
-	right: 610px;
+	top: -10px;
+	right: 480px;
 	width: 570px;
 }
 .dummy

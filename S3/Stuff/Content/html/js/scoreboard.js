@@ -1,4 +1,4 @@
-var pollingSpeed = 1000;//in ms
+var pollingSpeed = 250;//in ms
 var fadeSpeed = 3500; // in ms
 var fadeAnimationSpeed = 500;
 var informationBarSpeed = 6000;
@@ -10,6 +10,26 @@ function updateInformation()
 		//player names
 		$('#player1Text').text(json.Player1.name);
 		$('#player2Text').text(json.Player2.name);
+		// play with font widths
+		if($('#player1Text').text().length > 26) {
+			$('#player1Text').css("font-stretch", "condensed");
+		}
+		else if($('#player1Text').text().length < 18) {
+			$('#player1Text').css("font-stretch", "ultra-expanded");
+		}
+		else {
+			$('#player1Text').css("font-stretch", "normal");
+		}
+		
+		if($('#player2Text').text().length > 26) {
+			$('#player2Text').css("font-stretch", "condensed");
+		}
+		else if($('#player2Text').text().length < 18) {
+			$('#player2Text').css("font-stretch", "ultra-expanded");
+		}
+		else {
+			$('#player2Text').css("font-stretch", "normal");
+		}
 		//scores
 		$('#player1Score').text(json.Player1.score.toString());
 		$('#player2Score').text(json.Player2.score.toString());
@@ -27,8 +47,57 @@ function updateInformation()
 		$('#player1streamname').text(json.Player1.name);
 		$('#player2streamname').text(json.Player2.name);
 		//character images
-		$('#characterIMGP1').attr('src', "img/characters/" + json.Player1.character.icon);
-		$('#characterIMGP2').attr('src', "img/characters/" + json.Player2.character.icon);
+		if(json.iconStyle == "LEGACY")
+		{
+			$('#characterIMGP1').attr('src', "img/characters/" + json.Player1.character.icon);
+			$('#characterIMGP2').attr('src', "img/characters/" + json.Player2.character.icon);
+			$('#characterIMGP1').css("width", "80px");
+			$('#characterIMGP1').css("height", "56px");
+			$('#characterIMGP2').css("width", "80px");
+			$('#characterIMGP2').css("height", "56px");
+			$('#characterIMGP1').css("left", "-19px");
+			$('#characterIMGP2').css("right", "-19px");
+		}
+		else if(json.iconStyle == "LTESTOCK")
+		{
+			$('#characterIMGP1').attr('src', "img/ltestock/" + json.Player1.character.icon);
+			$('#characterIMGP2').attr('src', "img/ltestock/" + json.Player2.character.icon);
+			$('#characterIMGP1').css("width", "56px");
+			$('#characterIMGP1').css("height", "56px");
+			$('#characterIMGP2').css("width", "56px");
+			$('#characterIMGP2').css("height", "56px");
+			$('#characterIMGP1').css("left", "-6px");
+			$('#characterIMGP2').css("right", "-6px");
+		}
+		else if(json.iconStyle == "LTE2HD")
+		{
+			$('#characterIMGP1').attr('src', "img/lte2hd/" + json.Player1.character.icon);
+			$('#characterIMGP2').attr('src', "img/lte2hd/" + json.Player2.character.icon);
+			$('#characterIMGP1').css("width", "56px");
+			$('#characterIMGP1').css("height", "56px");
+			$('#characterIMGP2').css("width", "56px");
+			$('#characterIMGP2').css("height", "56px");
+			$('#characterIMGP1').css("left", "-6px");
+			$('#characterIMGP2').css("right", "-6px");
+		}
+		else if(json.iconStyle == "PMSTOCK")
+		{
+			$('#characterIMGP1').attr('src', "img/pmstock/" + json.Player1.character.icon);
+			$('#characterIMGP2').attr('src', "img/pmstock/" + json.Player2.character.icon);
+			$('#characterIMGP1').css("width", "56px");
+			$('#characterIMGP1').css("height", "56px");
+			$('#characterIMGP2').css("width", "56px");
+			$('#characterIMGP2').css("height", "56px");
+			$('#characterIMGP1').css("left", "-5px");
+			$('#characterIMGP2').css("right", "-8px");
+		}
+		else
+		{
+			$('#characterIMGP1').css("left", "-19px");
+			$('#characterIMGP2').css("right", "-19px");
+			$('#characterIMGP1').attr('src', "img/no/" + json.Player1.character.icon);
+			$('#characterIMGP2').attr('src', "img/no/" + json.Player2.character.icon);
+		}
 		//flags
 		$('#flagIMGP1').attr('src', "img/flags/" + json.Player1.flag.icon);
 		$('#flagIMGP2').attr('src', "img/flags/" + json.Player2.flag.icon);
@@ -76,15 +145,18 @@ function flagFades()
 {
 	if(nextFlagFade == "country")
 	{
+		/*
 		nextFlagFade = "character"
 		$('#characterIMGP1').fadeOut(fadeAnimationSpeed);
 		$('#flagIMGP1').fadeIn(fadeAnimationSpeed);
 		$('#characterIMGP2').fadeOut(fadeAnimationSpeed);
 		$('#flagIMGP2').fadeIn(fadeAnimationSpeed);
 		setTimeout("flagFades()", fadeSpeed);
+		*/
 	}
 	else
 	{
+		/*
 		nextFlagFade = "country"
 		$('#flagIMGP1').fadeOut(fadeAnimationSpeed);
 		$('#characterIMGP1').fadeIn(fadeAnimationSpeed);
@@ -92,6 +164,7 @@ function flagFades()
 		$('#characterIMGP2').fadeIn(fadeAnimationSpeed);
 		
 		setTimeout("flagFades()", fadeSpeed);
+		*/
 	}
 }
 function fadeEnd()

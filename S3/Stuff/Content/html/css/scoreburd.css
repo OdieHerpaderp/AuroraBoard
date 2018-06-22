@@ -1,0 +1,225 @@
+div
+{
+	text-shadow:
+    -1px -1px 0 #000,
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+    1px 1px 0 #000,
+	-2px -2px 2px #161B29,
+    2px -2px 2px #161B29,
+    -2px 2px 2px #161B29,
+    2px 2px 2px #161B29;	
+}
+
+.upLeftCharacterName {
+	position:absolute;
+	left: 0;
+	top: 0;
+}
+.upRightCharacterName {
+	position:absolute;
+	top: 0;
+	right: 0;
+}
+.scoreboardBottomLeft {
+
+}
+.background {
+	position:absolute;
+	height: 1080px;
+	width: 1920px;
+	left: 0;
+	top: 0;
+	z-index: -1;
+}
+.scoreboardContainerLeft
+{
+	position: absolute;
+	top: -10px;
+	width: 670px;
+	left: 0%;
+}
+.flagL{
+	position: absolute;
+	right: 220px;
+}
+.flagR{
+	position: absolute;
+	left: 220px;
+}
+.content {
+	font-family: 'Encode Sans', sans-serif;
+	font-weight: 500;
+	left: 1%;
+	position:absolute;
+	text-align: center;
+	top: 15px;
+	color: #fff;
+	font-size: 30px;
+	width: 60%;
+	vertical-align: middle;
+}
+.contentRight {
+	font-family: 'Encode Sans', sans-serif;
+	font-weight: 500;
+	position:absolute;
+	right: 2%;
+	text-align: center;
+	top: 15px;
+	color: #fff;
+	font-size: 30px;
+	width: 60%;
+	vertical-align: middle;
+}
+.contentDownRight {
+	font-family: 'Encode Sans', sans-serif;
+	font-weight: 500;
+	left: -5%;
+	position:absolute;
+	text-align: center;
+	top: 7px;
+	color: #fff;
+	font-size: 25px;
+	width: 100%;
+	vertical-align: middle;
+}
+.contentDownRightText {
+	margin-bottom: 20px;
+}
+.contentTop {
+	font-family: 'Encode Sans', sans-serif;
+	font-weight: 500;
+	left: 0%;
+	position:absolute;
+	text-align: center;
+	top: 6px;
+	color: #fff;
+	font-size: 28px;
+	width: 100%;
+	vertical-align: middle;
+}
+.upUI {
+	text-align: left;
+	position: absolute;
+	bottom: 49px;
+	left: 20px;
+	width: 420px;
+}
+.upUIR {
+	text-align: right;
+	position: absolute;
+	bottom: 49px;
+	left: 975px;
+	width: 420px;
+}
+.microphone {
+	
+}
+.rightDownContainer
+{
+	position: absolute;
+	bottom: 55px;
+	right: 10px;
+	width: 420px;
+}
+.rightDown
+{
+	
+}
+.contentRightDown {
+	font-family: 'Encode Sans', sans-serif;
+	font-weight: 500;
+	bottom: 0;
+	position:absolute;
+	text-align: center;
+	top: 15px;
+	color: #fff;
+	font-size: 30px;
+	width: 100%;
+	vertical-align: middle;
+}
+.sponsorImg {
+	vertical-align: middle;
+	margin-bottom: 10px;
+}
+.microphoneImage {
+	vertical-align: middle;
+	margin-bottom: 6px;
+	
+}
+.player1StreamCamName
+{
+	position:absolute;
+	top: 260px;
+	width: 500px;
+	right: 60px;
+	font-family: 'Encode Sans', sans-serif;
+	font-weight: 500;
+	color: #fff;
+	font-size: 20px;
+	text-align: center;
+}
+
+.player2StreamCamName
+{
+	position:absolute;
+	top: 545px;
+	width: 500px;
+	right: 60px;
+	font-family: 'Encode Sans', sans-serif;
+	font-weight: 500;
+	color: #fff;
+	font-size: 20px;
+	text-align: center;
+}
+.characterImgP1 {
+	font-family: 'Encode Sans', sans-serif;
+	font-weight: 500;
+	position:absolute;
+	top: 10px;
+	left: -19px;
+	height: 59px;
+}
+.characterImgP2 {
+	font-family: 'Encode Sans', sans-serif;
+	font-weight: 500;
+	position:absolute;
+	top: 10px;
+	right: -19px;
+	height: 59px;
+}
+.flagImgP2 {
+	font-family: 'Encode Sans', sans-serif;
+	font-weight: 500;
+	position:absolute;
+	top: 26px;
+	right: 2px;
+}
+.flagImgP1 {
+	font-family: 'Encode Sans', sans-serif;
+	font-weight: 500;
+	position:absolute;
+	top: 26px;
+	left: 2px;
+}
+.scoreboardBottomRight {
+
+}
+.scoreboardContainerRight{
+	position: absolute;
+	top: -10px;
+	right: 480px;
+	width: 670px;
+}
+.dummy
+{
+	
+}
+.sponsors {
+	position: absolute;
+	left: 250px;
+	top: 50px;
+	
+}
+body {
+}
