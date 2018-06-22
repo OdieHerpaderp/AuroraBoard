@@ -24,6 +24,7 @@ namespace S3
         public string caster;
         public string streamer;
         public string iconStyle;
+        public string matchType;
     }
     public class BracketUpdate
     {

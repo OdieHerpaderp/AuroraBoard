@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainForm));
             this.FlagsCombo = new System.Windows.Forms.ComboBox();
             this.FlagsComboP2 = new System.Windows.Forms.ComboBox();
             this.SendUpdateButton = new System.Windows.Forms.Button();
@@ -65,7 +66,6 @@
             this.radioLTEStock = new System.Windows.Forms.RadioButton();
             this.radioPM = new System.Windows.Forms.RadioButton();
             this.radioLTE = new System.Windows.Forms.RadioButton();
-            this.label13 = new System.Windows.Forms.Label();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.cbSwapFields = new System.Windows.Forms.CheckBox();
             this.label10 = new System.Windows.Forms.Label();
@@ -259,6 +259,11 @@
             this.tbDWSA1 = new System.Windows.Forms.TextBox();
             this.label105 = new System.Windows.Forms.Label();
             this.tabPage4 = new System.Windows.Forms.TabPage();
+            this.radioLTE2HD = new System.Windows.Forms.RadioButton();
+            this.groupBox23 = new System.Windows.Forms.GroupBox();
+            this.radioBO3 = new System.Windows.Forms.RadioButton();
+            this.radioOther = new System.Windows.Forms.RadioButton();
+            this.radioBO5 = new System.Windows.Forms.RadioButton();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.groupBox1.SuspendLayout();
@@ -331,6 +336,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.numDWSA2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numDWSA1)).BeginInit();
             this.tabPage4.SuspendLayout();
+            this.groupBox23.SuspendLayout();
             this.SuspendLayout();
             // 
             // FlagsCombo
@@ -358,7 +364,7 @@
             // SendUpdateButton
             // 
             this.SendUpdateButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.SendUpdateButton.Location = new System.Drawing.Point(333, 268);
+            this.SendUpdateButton.Location = new System.Drawing.Point(358, 264);
             this.SendUpdateButton.Name = "SendUpdateButton";
             this.SendUpdateButton.Size = new System.Drawing.Size(102, 23);
             this.SendUpdateButton.TabIndex = 8;
@@ -371,7 +377,7 @@
             this.SettingsButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.SettingsButton.Location = new System.Drawing.Point(3, 3);
             this.SettingsButton.Name = "SettingsButton";
-            this.SettingsButton.Size = new System.Drawing.Size(421, 23);
+            this.SettingsButton.Size = new System.Drawing.Size(454, 23);
             this.SettingsButton.TabIndex = 14;
             this.SettingsButton.Text = "Settings";
             this.SettingsButton.UseVisualStyleBackColor = true;
@@ -380,7 +386,7 @@
             // StartServer
             // 
             this.StartServer.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.StartServer.Location = new System.Drawing.Point(254, 268);
+            this.StartServer.Location = new System.Drawing.Point(279, 264);
             this.StartServer.Name = "StartServer";
             this.StartServer.Size = new System.Drawing.Size(78, 23);
             this.StartServer.TabIndex = 16;
@@ -392,7 +398,7 @@
             // 
             this.UrlLinkLabel.AutoSize = true;
             this.UrlLinkLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.UrlLinkLabel.Location = new System.Drawing.Point(6, 273);
+            this.UrlLinkLabel.Location = new System.Drawing.Point(6, 269);
             this.UrlLinkLabel.Name = "UrlLinkLabel";
             this.UrlLinkLabel.Size = new System.Drawing.Size(74, 13);
             this.UrlLinkLabel.TabIndex = 17;
@@ -422,7 +428,7 @@
             this.tabControl1.Location = new System.Drawing.Point(-1, -1);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
-            this.tabControl1.Size = new System.Drawing.Size(438, 270);
+            this.tabControl1.Size = new System.Drawing.Size(468, 263);
             this.tabControl1.TabIndex = 18;
             // 
             // tabPage1
@@ -431,22 +437,23 @@
             this.tabPage1.Controls.Add(this.swapChars);
             this.tabPage1.Controls.Add(this.groupBox1);
             this.tabPage1.Controls.Add(this.groupBox2);
-            this.tabPage1.Controls.Add(this.groupBox4);
             this.tabPage1.Controls.Add(this.groupBox5);
             this.tabPage1.Controls.Add(this.groupBox3);
+            this.tabPage1.Controls.Add(this.groupBox4);
+            this.tabPage1.Controls.Add(this.groupBox23);
             this.tabPage1.Location = new System.Drawing.Point(4, 22);
             this.tabPage1.Name = "tabPage1";
             this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage1.Size = new System.Drawing.Size(430, 244);
+            this.tabPage1.Size = new System.Drawing.Size(460, 237);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "Tourney";
             // 
             // swapChars
             // 
             this.swapChars.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.swapChars.Location = new System.Drawing.Point(166, 9);
+            this.swapChars.Location = new System.Drawing.Point(179, 9);
             this.swapChars.Name = "swapChars";
-            this.swapChars.Size = new System.Drawing.Size(96, 23);
+            this.swapChars.Size = new System.Drawing.Size(100, 26);
             this.swapChars.TabIndex = 19;
             this.swapChars.Text = "<- Swap ->";
             this.swapChars.UseVisualStyleBackColor = true;
@@ -466,7 +473,7 @@
             this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox1.Location = new System.Drawing.Point(0, 2);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(160, 133);
+            this.groupBox1.Size = new System.Drawing.Size(168, 133);
             this.groupBox1.TabIndex = 1;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Player 1";
@@ -475,7 +482,7 @@
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(108, 53);
+            this.label4.Location = new System.Drawing.Point(118, 53);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(39, 15);
             this.label4.TabIndex = 6;
@@ -484,7 +491,7 @@
             // Player1Score
             // 
             this.Player1Score.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Player1Score.Location = new System.Drawing.Point(111, 68);
+            this.Player1Score.Location = new System.Drawing.Point(121, 68);
             this.Player1Score.Name = "Player1Score";
             this.Player1Score.Size = new System.Drawing.Size(43, 21);
             this.Player1Score.TabIndex = 2;
@@ -497,7 +504,7 @@
             this.Player1Character.FormattingEnabled = true;
             this.Player1Character.Location = new System.Drawing.Point(7, 105);
             this.Player1Character.Name = "Player1Character";
-            this.Player1Character.Size = new System.Drawing.Size(147, 23);
+            this.Player1Character.Size = new System.Drawing.Size(158, 23);
             this.Player1Character.TabIndex = 4;
             // 
             // Player1Sponsor
@@ -507,7 +514,7 @@
             this.Player1Sponsor.FormattingEnabled = true;
             this.Player1Sponsor.Location = new System.Drawing.Point(7, 67);
             this.Player1Sponsor.Name = "Player1Sponsor";
-            this.Player1Sponsor.Size = new System.Drawing.Size(100, 23);
+            this.Player1Sponsor.Size = new System.Drawing.Size(108, 23);
             this.Player1Sponsor.TabIndex = 2;
             this.Player1Sponsor.SelectedIndexChanged += new System.EventHandler(this.Player1Sponsor_SelectedIndexChanged);
             // 
@@ -515,7 +522,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(4, 15);
+            this.label1.Location = new System.Drawing.Point(6, 15);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(41, 15);
             this.label1.TabIndex = 2;
@@ -526,7 +533,7 @@
             this.Player1Name.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Player1Name.Location = new System.Drawing.Point(7, 30);
             this.Player1Name.Name = "Player1Name";
-            this.Player1Name.Size = new System.Drawing.Size(147, 21);
+            this.Player1Name.Size = new System.Drawing.Size(158, 21);
             this.Player1Name.TabIndex = 0;
             // 
             // label3
@@ -543,7 +550,7 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(4, 51);
+            this.label2.Location = new System.Drawing.Point(6, 51);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(53, 15);
             this.label2.TabIndex = 3;
@@ -561,9 +568,9 @@
             this.groupBox2.Controls.Add(this.Player2Name);
             this.groupBox2.Controls.Add(this.label6);
             this.groupBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox2.Location = new System.Drawing.Point(267, 2);
+            this.groupBox2.Location = new System.Drawing.Point(289, 2);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(160, 133);
+            this.groupBox2.Size = new System.Drawing.Size(168, 133);
             this.groupBox2.TabIndex = 7;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Player 2";
@@ -572,7 +579,7 @@
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(108, 54);
+            this.label5.Location = new System.Drawing.Point(118, 54);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(39, 15);
             this.label5.TabIndex = 6;
@@ -581,7 +588,7 @@
             // Player2Score
             // 
             this.Player2Score.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Player2Score.Location = new System.Drawing.Point(111, 69);
+            this.Player2Score.Location = new System.Drawing.Point(121, 69);
             this.Player2Score.Name = "Player2Score";
             this.Player2Score.Size = new System.Drawing.Size(43, 21);
             this.Player2Score.TabIndex = 2;
@@ -593,14 +600,14 @@
             this.Player2Character.FormattingEnabled = true;
             this.Player2Character.Location = new System.Drawing.Point(7, 105);
             this.Player2Character.Name = "Player2Character";
-            this.Player2Character.Size = new System.Drawing.Size(147, 23);
+            this.Player2Character.Size = new System.Drawing.Size(158, 23);
             this.Player2Character.TabIndex = 4;
             // 
             // label7
             // 
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(4, 51);
+            this.label7.Location = new System.Drawing.Point(6, 51);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(53, 15);
             this.label7.TabIndex = 3;
@@ -614,7 +621,7 @@
             this.Player2Sponsor.FormattingEnabled = true;
             this.Player2Sponsor.Location = new System.Drawing.Point(7, 67);
             this.Player2Sponsor.Name = "Player2Sponsor";
-            this.Player2Sponsor.Size = new System.Drawing.Size(100, 23);
+            this.Player2Sponsor.Size = new System.Drawing.Size(108, 23);
             this.Player2Sponsor.TabIndex = 2;
             // 
             // label8
@@ -622,7 +629,7 @@
             this.label8.AutoSize = true;
             this.label8.BackColor = System.Drawing.Color.Transparent;
             this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.Location = new System.Drawing.Point(5, 13);
+            this.label8.Location = new System.Drawing.Point(7, 13);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(41, 15);
             this.label8.TabIndex = 2;
@@ -633,7 +640,7 @@
             this.Player2Name.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Player2Name.Location = new System.Drawing.Point(7, 30);
             this.Player2Name.Name = "Player2Name";
-            this.Player2Name.Size = new System.Drawing.Size(147, 21);
+            this.Player2Name.Size = new System.Drawing.Size(158, 21);
             this.Player2Name.TabIndex = 0;
             // 
             // label6
@@ -641,7 +648,7 @@
             this.label6.AutoSize = true;
             this.label6.BackColor = System.Drawing.Color.Transparent;
             this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(4, 91);
+            this.label6.Location = new System.Drawing.Point(6, 91);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(60, 15);
             this.label6.TabIndex = 5;
@@ -655,9 +662,9 @@
             this.groupBox4.Controls.Add(this.CasterTextbox);
             this.groupBox4.Controls.Add(this.StreamerTextbox);
             this.groupBox4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox4.Location = new System.Drawing.Point(246, 141);
+            this.groupBox4.Location = new System.Drawing.Point(289, 133);
             this.groupBox4.Name = "groupBox4";
-            this.groupBox4.Size = new System.Drawing.Size(181, 100);
+            this.groupBox4.Size = new System.Drawing.Size(168, 100);
             this.groupBox4.TabIndex = 13;
             this.groupBox4.TabStop = false;
             this.groupBox4.Text = "Misc";
@@ -666,7 +673,7 @@
             // 
             this.label11.AutoSize = true;
             this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label11.Location = new System.Drawing.Point(6, 16);
+            this.label11.Location = new System.Drawing.Point(4, 16);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(58, 15);
             this.label11.TabIndex = 12;
@@ -676,7 +683,7 @@
             // 
             this.label12.AutoSize = true;
             this.label12.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label12.Location = new System.Drawing.Point(6, 58);
+            this.label12.Location = new System.Drawing.Point(4, 58);
             this.label12.Name = "label12";
             this.label12.Size = new System.Drawing.Size(48, 15);
             this.label12.TabIndex = 11;
@@ -685,39 +692,39 @@
             // CasterTextbox
             // 
             this.CasterTextbox.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.CasterTextbox.Location = new System.Drawing.Point(6, 74);
+            this.CasterTextbox.Location = new System.Drawing.Point(5, 74);
             this.CasterTextbox.Name = "CasterTextbox";
-            this.CasterTextbox.Size = new System.Drawing.Size(170, 21);
+            this.CasterTextbox.Size = new System.Drawing.Size(158, 21);
             this.CasterTextbox.TabIndex = 10;
             // 
             // StreamerTextbox
             // 
             this.StreamerTextbox.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.StreamerTextbox.Location = new System.Drawing.Point(6, 35);
+            this.StreamerTextbox.Location = new System.Drawing.Point(5, 35);
             this.StreamerTextbox.Name = "StreamerTextbox";
-            this.StreamerTextbox.Size = new System.Drawing.Size(170, 21);
+            this.StreamerTextbox.Size = new System.Drawing.Size(158, 21);
             this.StreamerTextbox.TabIndex = 9;
             // 
             // groupBox5
             // 
             this.groupBox5.BackColor = System.Drawing.Color.Transparent;
+            this.groupBox5.Controls.Add(this.radioLTE2HD);
             this.groupBox5.Controls.Add(this.radioLTEStock);
             this.groupBox5.Controls.Add(this.radioPM);
             this.groupBox5.Controls.Add(this.radioLTE);
-            this.groupBox5.Controls.Add(this.label13);
             this.groupBox5.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox5.Location = new System.Drawing.Point(162, 35);
+            this.groupBox5.Location = new System.Drawing.Point(172, 35);
             this.groupBox5.Name = "groupBox5";
-            this.groupBox5.Size = new System.Drawing.Size(103, 100);
+            this.groupBox5.Size = new System.Drawing.Size(113, 100);
             this.groupBox5.TabIndex = 14;
             this.groupBox5.TabStop = false;
-            this.groupBox5.Text = "Misc";
+            this.groupBox5.Text = "Icon Style";
             // 
             // radioLTEStock
             // 
             this.radioLTEStock.AutoSize = true;
             this.radioLTEStock.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioLTEStock.Location = new System.Drawing.Point(9, 71);
+            this.radioLTEStock.Location = new System.Drawing.Point(9, 72);
             this.radioLTEStock.Name = "radioLTEStock";
             this.radioLTEStock.Size = new System.Drawing.Size(80, 19);
             this.radioLTEStock.TabIndex = 16;
@@ -728,7 +735,7 @@
             // 
             this.radioPM.AutoSize = true;
             this.radioPM.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioPM.Location = new System.Drawing.Point(9, 51);
+            this.radioPM.Location = new System.Drawing.Point(9, 53);
             this.radioPM.Name = "radioPM";
             this.radioPM.Size = new System.Drawing.Size(77, 19);
             this.radioPM.TabIndex = 14;
@@ -740,7 +747,7 @@
             this.radioLTE.AutoSize = true;
             this.radioLTE.Checked = true;
             this.radioLTE.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioLTE.Location = new System.Drawing.Point(9, 32);
+            this.radioLTE.Location = new System.Drawing.Point(9, 34);
             this.radioLTE.Name = "radioLTE";
             this.radioLTE.Size = new System.Drawing.Size(74, 19);
             this.radioLTE.TabIndex = 13;
@@ -748,17 +755,6 @@
             this.radioLTE.Text = "LTE CSS";
             this.radioLTE.UseVisualStyleBackColor = true;
             this.radioLTE.CheckedChanged += new System.EventHandler(this.radioLTE_CheckedChanged);
-            // 
-            // label13
-            // 
-            this.label13.AutoSize = true;
-            this.label13.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label13.Location = new System.Drawing.Point(6, 16);
-            this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(59, 15);
-            this.label13.TabIndex = 12;
-            this.label13.Text = "Icon Style";
-            this.label13.Click += new System.EventHandler(this.label13_Click);
             // 
             // groupBox3
             // 
@@ -769,9 +765,9 @@
             this.groupBox3.Controls.Add(this.tournamentNameTextbox);
             this.groupBox3.Controls.Add(this.RoundNameTextbox);
             this.groupBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox3.Location = new System.Drawing.Point(0, 141);
+            this.groupBox3.Location = new System.Drawing.Point(0, 133);
             this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Size = new System.Drawing.Size(183, 100);
+            this.groupBox3.Size = new System.Drawing.Size(168, 100);
             this.groupBox3.TabIndex = 11;
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "Tournament";
@@ -780,7 +776,7 @@
             // 
             this.cbSwapFields.AutoSize = true;
             this.cbSwapFields.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cbSwapFields.Location = new System.Drawing.Point(93, 13);
+            this.cbSwapFields.Location = new System.Drawing.Point(81, 13);
             this.cbSwapFields.Name = "cbSwapFields";
             this.cbSwapFields.Size = new System.Drawing.Size(89, 19);
             this.cbSwapFields.TabIndex = 13;
@@ -792,7 +788,7 @@
             // 
             this.label10.AutoSize = true;
             this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.Location = new System.Drawing.Point(6, 16);
+            this.label10.Location = new System.Drawing.Point(4, 16);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(44, 15);
             this.label10.TabIndex = 12;
@@ -802,7 +798,7 @@
             // 
             this.label9.AutoSize = true;
             this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.Location = new System.Drawing.Point(6, 58);
+            this.label9.Location = new System.Drawing.Point(4, 58);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(74, 15);
             this.label9.TabIndex = 11;
@@ -811,17 +807,17 @@
             // tournamentNameTextbox
             // 
             this.tournamentNameTextbox.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tournamentNameTextbox.Location = new System.Drawing.Point(6, 74);
+            this.tournamentNameTextbox.Location = new System.Drawing.Point(5, 74);
             this.tournamentNameTextbox.Name = "tournamentNameTextbox";
-            this.tournamentNameTextbox.Size = new System.Drawing.Size(170, 21);
+            this.tournamentNameTextbox.Size = new System.Drawing.Size(158, 21);
             this.tournamentNameTextbox.TabIndex = 10;
             // 
             // RoundNameTextbox
             // 
             this.RoundNameTextbox.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.RoundNameTextbox.Location = new System.Drawing.Point(6, 35);
+            this.RoundNameTextbox.Location = new System.Drawing.Point(5, 35);
             this.RoundNameTextbox.Name = "RoundNameTextbox";
-            this.RoundNameTextbox.Size = new System.Drawing.Size(170, 21);
+            this.RoundNameTextbox.Size = new System.Drawing.Size(158, 21);
             this.RoundNameTextbox.TabIndex = 9;
             // 
             // tabPage2
@@ -846,7 +842,7 @@
             this.tabPage2.Location = new System.Drawing.Point(4, 22);
             this.tabPage2.Name = "tabPage2";
             this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage2.Size = new System.Drawing.Size(427, 244);
+            this.tabPage2.Size = new System.Drawing.Size(460, 237);
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "Bracket Singles";
             // 
@@ -1891,7 +1887,7 @@
             this.tabPage3.Controls.Add(this.groupBox27);
             this.tabPage3.Location = new System.Drawing.Point(4, 22);
             this.tabPage3.Name = "tabPage3";
-            this.tabPage3.Size = new System.Drawing.Size(427, 244);
+            this.tabPage3.Size = new System.Drawing.Size(460, 237);
             this.tabPage3.TabIndex = 2;
             this.tabPage3.Text = "Bracket Doubles";
             // 
@@ -2742,15 +2738,77 @@
             this.tabPage4.Controls.Add(this.SettingsButton);
             this.tabPage4.Location = new System.Drawing.Point(4, 22);
             this.tabPage4.Name = "tabPage4";
-            this.tabPage4.Size = new System.Drawing.Size(427, 244);
+            this.tabPage4.Size = new System.Drawing.Size(460, 237);
             this.tabPage4.TabIndex = 3;
             this.tabPage4.Text = "Settings";
             // 
+            // radioLTE2HD
+            // 
+            this.radioLTE2HD.AutoSize = true;
+            this.radioLTE2HD.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.radioLTE2HD.Location = new System.Drawing.Point(9, 15);
+            this.radioLTE2HD.Name = "radioLTE2HD";
+            this.radioLTE2HD.Size = new System.Drawing.Size(88, 19);
+            this.radioLTE2HD.TabIndex = 17;
+            this.radioLTE2HD.Text = "LTE 2.0 HD";
+            this.radioLTE2HD.UseVisualStyleBackColor = true;
+            this.radioLTE2HD.CheckedChanged += new System.EventHandler(this.radioButton1_CheckedChanged);
+            // 
+            // groupBox23
+            // 
+            this.groupBox23.BackColor = System.Drawing.Color.Transparent;
+            this.groupBox23.Controls.Add(this.radioBO3);
+            this.groupBox23.Controls.Add(this.radioOther);
+            this.groupBox23.Controls.Add(this.radioBO5);
+            this.groupBox23.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupBox23.Location = new System.Drawing.Point(172, 133);
+            this.groupBox23.Name = "groupBox23";
+            this.groupBox23.Size = new System.Drawing.Size(113, 100);
+            this.groupBox23.TabIndex = 20;
+            this.groupBox23.TabStop = false;
+            this.groupBox23.Text = "Score Type";
+            // 
+            // radioBO3
+            // 
+            this.radioBO3.AutoSize = true;
+            this.radioBO3.Checked = true;
+            this.radioBO3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.radioBO3.Location = new System.Drawing.Point(9, 16);
+            this.radioBO3.Name = "radioBO3";
+            this.radioBO3.Size = new System.Drawing.Size(72, 19);
+            this.radioBO3.TabIndex = 17;
+            this.radioBO3.TabStop = true;
+            this.radioBO3.Text = "Best of 3";
+            this.radioBO3.UseVisualStyleBackColor = true;
+            // 
+            // radioOther
+            // 
+            this.radioOther.AutoSize = true;
+            this.radioOther.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.radioOther.Location = new System.Drawing.Point(9, 56);
+            this.radioOther.Name = "radioOther";
+            this.radioOther.Size = new System.Drawing.Size(55, 19);
+            this.radioOther.TabIndex = 14;
+            this.radioOther.Text = "Other";
+            this.radioOther.UseVisualStyleBackColor = true;
+            this.radioOther.CheckedChanged += new System.EventHandler(this.radioOther_CheckedChanged);
+            // 
+            // radioBO5
+            // 
+            this.radioBO5.AutoSize = true;
+            this.radioBO5.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.radioBO5.Location = new System.Drawing.Point(9, 36);
+            this.radioBO5.Name = "radioBO5";
+            this.radioBO5.Size = new System.Drawing.Size(72, 19);
+            this.radioBO5.TabIndex = 13;
+            this.radioBO5.Text = "Best of 5";
+            this.radioBO5.UseVisualStyleBackColor = true;
+            // 
             // MainForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(434, 291);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(96F, 96F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
+            this.ClientSize = new System.Drawing.Size(462, 288);
             this.Controls.Add(this.tabControl1);
             this.Controls.Add(this.FlagsComboP2);
             this.Controls.Add(this.UrlLinkLabel);
@@ -2758,7 +2816,11 @@
             this.Controls.Add(this.StartServer);
             this.Controls.Add(this.SendUpdateButton);
             this.Controls.Add(this.lblStyle);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.MaximizeBox = false;
             this.Name = "MainForm";
+            this.SizeGripStyle = System.Windows.Forms.SizeGripStyle.Hide;
             this.Text = "Osteraboard";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.tabControl1.ResumeLayout(false);
@@ -2860,6 +2922,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.numDWSA2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numDWSA1)).EndInit();
             this.tabPage4.ResumeLayout(false);
+            this.groupBox23.ResumeLayout(false);
+            this.groupBox23.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -2902,7 +2966,6 @@
         private System.Windows.Forms.Button StartServer;
         private System.Windows.Forms.LinkLabel UrlLinkLabel;
         private System.Windows.Forms.GroupBox groupBox5;
-        private System.Windows.Forms.Label label13;
         private System.Windows.Forms.RadioButton radioPM;
         private System.Windows.Forms.RadioButton radioLTE;
         private System.Windows.Forms.Label lblStyle;
@@ -3098,6 +3161,11 @@
         internal System.Windows.Forms.Label label104;
         private System.Windows.Forms.TextBox tbDWSA1;
         internal System.Windows.Forms.Label label105;
+        private System.Windows.Forms.RadioButton radioLTE2HD;
+        private System.Windows.Forms.GroupBox groupBox23;
+        private System.Windows.Forms.RadioButton radioBO3;
+        private System.Windows.Forms.RadioButton radioOther;
+        private System.Windows.Forms.RadioButton radioBO5;
     }
 }
 

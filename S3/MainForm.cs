@@ -105,7 +105,14 @@ namespace S3
             Globals.CurrentInformationUpdate.streamer = StreamerTextbox.Text;
             Globals.CurrentInformationUpdate.Player1.flag = ((Flag)((ComboboxItem)FlagsCombo.SelectedItem).Value);
             Globals.CurrentInformationUpdate.Player2.flag = ((Flag)((ComboboxItem)FlagsComboP2.SelectedItem).Value);
+
+            if (radioBO3.Checked == true) { Globals.CurrentInformationUpdate.matchType = "BEST OF 3"; }
+            else if (radioBO5.Checked == true) { Globals.CurrentInformationUpdate.matchType = "BEST OF 5"; }
+            else if (radioOther.Checked == true) { Globals.CurrentInformationUpdate.matchType = ""; }
+            else { Globals.CurrentInformationUpdate.matchType = ""; }
+
             if (radioLTE.Checked == true) { Globals.CurrentInformationUpdate.iconStyle = "LEGACY"; }
+            else if (radioLTE2HD.Checked == true) { Globals.CurrentInformationUpdate.iconStyle = "LTE2HD"; }
             else if (radioLTEStock.Checked == true) { Globals.CurrentInformationUpdate.iconStyle = "LTESTOCK"; }
             else { Globals.CurrentInformationUpdate.iconStyle = "PMSTOCK"; }
             lblStyle.Text = Globals.CurrentInformationUpdate.iconStyle;
@@ -433,6 +440,16 @@ namespace S3
         }
 
         private void Player1Sponsor_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void radioButton1_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void radioOther_CheckedChanged(object sender, EventArgs e)
         {
 
         }
