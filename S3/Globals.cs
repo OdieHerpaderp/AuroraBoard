@@ -11,5 +11,6 @@ namespace S3
         public static InformationUpdate CurrentInformationUpdate;
         public static BracketUpdate bracketInfo;
         public static Settings settings = new Settings();
+        public static CrewUpdate CurrentCrewUpdate;
     }
 }

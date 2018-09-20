@@ -20,6 +20,34 @@ namespace S3
         public MainForm()
         {
             InitializeComponent();
+            Globals.CurrentCrewUpdate = new CrewUpdate();
+
+            Globals.CurrentCrewUpdate.Crew1 = "TESTA";
+            Globals.CurrentCrewUpdate.Crew1Stocks = 16;
+
+            Globals.CurrentCrewUpdate.Crew2 = "TESTB";
+            Globals.CurrentCrewUpdate.Crew2Stocks = 16;
+
+            Globals.CurrentCrewUpdate.A1 = new Crewmember();
+            Globals.CurrentCrewUpdate.A2 = new Crewmember();
+            Globals.CurrentCrewUpdate.A3 = new Crewmember();
+            Globals.CurrentCrewUpdate.A4 = new Crewmember();
+
+            Globals.CurrentCrewUpdate.B1 = new Crewmember();
+            Globals.CurrentCrewUpdate.B2 = new Crewmember();
+            Globals.CurrentCrewUpdate.B3 = new Crewmember();
+            Globals.CurrentCrewUpdate.B4 = new Crewmember();
+
+            Globals.CurrentCrewUpdate.A1.name = "? ? ?";
+            Globals.CurrentCrewUpdate.A2.name = "? ? ?";
+            Globals.CurrentCrewUpdate.A3.name = "? ? ?";
+            Globals.CurrentCrewUpdate.A4.name = "? ? ?";
+
+            Globals.CurrentCrewUpdate.B1.name = "? ? ?";
+            Globals.CurrentCrewUpdate.B2.name = "? ? ?";
+            Globals.CurrentCrewUpdate.B3.name = "? ? ?";
+            Globals.CurrentCrewUpdate.B4.name = "? ? ?";
+
             Globals.bracketInfo = new BracketUpdate();
             // Singles
             // Winner's Semis
@@ -77,7 +105,7 @@ namespace S3
         {
             SendUpdate();
             updateBracket();
-
+            updateCrews();
         }
 
         private void SendUpdate()
@@ -223,7 +251,40 @@ namespace S3
             Globals.bracketInfo.DLQB.Player2 = tbDLQB2.Text;
             Globals.bracketInfo.DLQB.Player2score = Convert.ToInt16(numDLQB2.Value);
         }
-        private void parseComboBoxItems()
+        private void updateCrews()
+        {
+            // Grab data from globals
+            Globals.CurrentCrewUpdate.iconStyle = Globals.CurrentInformationUpdate.iconStyle;
+            Globals.CurrentCrewUpdate.matchType = "Crew Battle";
+            Globals.CurrentCrewUpdate.streamer = Globals.CurrentInformationUpdate.streamer;
+            Globals.CurrentCrewUpdate.caster = Globals.CurrentInformationUpdate.caster;
+            Globals.CurrentCrewUpdate.round = Globals.CurrentInformationUpdate.round;
+            Globals.CurrentCrewUpdate.tournamentName = Globals.CurrentInformationUpdate.tournamentName;
+
+            Globals.CurrentCrewUpdate.Crew1 = tbCrewNameA.Text;
+            Globals.CurrentCrewUpdate.Crew1Stocks = Convert.ToInt16(numStockA.Value);
+            Globals.CurrentCrewUpdate.Crew2 = tbCrewNameB.Text;
+            Globals.CurrentCrewUpdate.Crew2Stocks = Convert.ToInt16(numStockB.Value);
+
+            Globals.CurrentCrewUpdate.A1.name = tbA1.Text;
+            Globals.CurrentCrewUpdate.A1.character = (Character)((ComboboxItem)crewCharA1.SelectedItem).Value;
+            Globals.CurrentCrewUpdate.A2.name = tbA2.Text;
+            Globals.CurrentCrewUpdate.A2.character = (Character)((ComboboxItem)crewCharA2.SelectedItem).Value;
+            Globals.CurrentCrewUpdate.A3.name = tbA3.Text;
+            Globals.CurrentCrewUpdate.A3.character = (Character)((ComboboxItem)crewCharA3.SelectedItem).Value;
+            Globals.CurrentCrewUpdate.A4.name = tbA4.Text;
+            Globals.CurrentCrewUpdate.A4.character = (Character)((ComboboxItem)crewCharA4.SelectedItem).Value;
+
+            Globals.CurrentCrewUpdate.B1.name = tbB1.Text;
+            Globals.CurrentCrewUpdate.B1.character = (Character)((ComboboxItem)crewCharB1.SelectedItem).Value;
+            Globals.CurrentCrewUpdate.B2.name = tbB2.Text;
+            Globals.CurrentCrewUpdate.B2.character = (Character)((ComboboxItem)crewCharB2.SelectedItem).Value;
+            Globals.CurrentCrewUpdate.B3.name = tbB3.Text;
+            Globals.CurrentCrewUpdate.B3.character = (Character)((ComboboxItem)crewCharB3.SelectedItem).Value;
+            Globals.CurrentCrewUpdate.B4.name = tbB4.Text;
+            Globals.CurrentCrewUpdate.B4.character = (Character)((ComboboxItem)crewCharB4.SelectedItem).Value;
+        }
+            private void parseComboBoxItems()
         {
             string file = Path.Combine(Path.GetDirectoryName(System.Reflection.Assembly.GetExecutingAssembly().Location), "characters.json");
             string contents = File.ReadAllText(file);
@@ -236,12 +297,41 @@ namespace S3
                 item.Value = c;
                 Player1Character.Items.Add(item);
                 Player2Character.Items.Add(item);
-                
+
+                crewCharA1.Items.Add(item);
+                crewCharA2.Items.Add(item);
+                crewCharA3.Items.Add(item);
+                crewCharA4.Items.Add(item);
+
+                crewCharB1.Items.Add(item);
+                crewCharB2.Items.Add(item);
+                crewCharB3.Items.Add(item);
+                crewCharB4.Items.Add(item);
             }
             Player1Character.SelectedIndex = 0;
             Player2Character.SelectedIndex = 0;
             Player1Character.Sorted = true;
             Player2Character.Sorted = true;
+
+            crewCharA1.Sorted = true;
+            crewCharA2.Sorted = true;
+            crewCharA3.Sorted = true;
+            crewCharA4.Sorted = true;
+
+            crewCharB1.Sorted = true;
+            crewCharB2.Sorted = true;
+            crewCharB3.Sorted = true;
+            crewCharB4.Sorted = true;
+
+            crewCharA1.SelectedIndex = 0;
+            crewCharA2.SelectedIndex = 0;
+            crewCharA3.SelectedIndex = 0;
+            crewCharA4.SelectedIndex = 0;
+
+            crewCharB1.SelectedIndex = 0;
+            crewCharB2.SelectedIndex = 0;
+            crewCharB3.SelectedIndex = 0;
+            crewCharB4.SelectedIndex = 0;
 
             string sponsors = Path.Combine(Path.GetDirectoryName(System.Reflection.Assembly.GetExecutingAssembly().Location), "sponsors.json");
             string sponsorsContents = File.ReadAllText(sponsors);
@@ -450,6 +540,42 @@ namespace S3
         }
 
         private void radioOther_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label13_Click_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void groupBox25_Enter(object sender, EventArgs e)
+        {
+
+
+        }
+
+        private void label89_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void numericUpDown1_ValueChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void numericUpDown2_ValueChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void groupBox30_Enter(object sender, EventArgs e)
+        {
+
+        }
+
+        private void groupBox4_Enter(object sender, EventArgs e)
         {
 
         }

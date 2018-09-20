@@ -26,6 +26,32 @@ namespace S3
         public string iconStyle;
         public string matchType;
     }
+    public class CrewUpdate
+    {
+        public string Crew1;
+        public string Crew2;
+        public int Crew1Stocks;
+        public int Crew2Stocks;
+
+        public string round;
+        public string tournamentName;
+        public string caster;
+        public string streamer;
+        public string iconStyle;
+        public string matchType = "Crew Battle";
+
+        public Crewmember A1;
+        public Crewmember A2;
+        public Crewmember A3;
+        public Crewmember A4;
+        public Crewmember A5;
+
+        public Crewmember B1;
+        public Crewmember B2;
+        public Crewmember B3;
+        public Crewmember B4;
+        public Crewmember B5;
+    }
     public class BracketUpdate
     {
         public Bracket WSA;
@@ -59,6 +85,11 @@ namespace S3
         public int score;
         public Flag flag;
     }
+    public class Crewmember
+    {
+        public string name;
+        public Character character;
+    }
 
     public class Bracket
     {
@@ -75,6 +106,14 @@ namespace S3
             Get["/getCurrentValues"] = parameters =>
             {
                 InformationUpdate update = Globals.CurrentInformationUpdate;
+                string data = JsonConvert.SerializeObject(update);
+                Response response = (Response)data;
+                response.ContentType = "application/json";
+                return response;
+            };
+            Get["/getCrewValues"] = parameters =>
+            {
+                CrewUpdate update = Globals.CurrentCrewUpdate;
                 string data = JsonConvert.SerializeObject(update);
                 Response response = (Response)data;
                 response.ContentType = "application/json";
