@@ -43,57 +43,97 @@ div
 	width: 670px;
 }
 .scoreboardContainerMiddle{
-	font-family: 'Encode Sans', sans-serif;
+	font-family: 'OneTwoPunch BB', sans-serif;
 	color: #fff;
 	position: absolute;
 	text-align: center;
-	top: 26px;
+	top: 16px;
 	right: 57%;
 	width: 245px;
 }
 .flagL{
 	position: absolute;
-	right: 160px;
-	top: -4px;
+	left: 516px;
+	top: 4px;
+	text-align: center;
+	width: 200px;
 }
 .flagR{
 	position: absolute;
-	left: 120px;
-	top: -4px;
+	right: 554px;
+	top: 4px;
+	text-align: center;
+	width:200px;
+}
+.stockA
+{
+	position:relative;
+	left:120px;
+	top:56px;
+}
+.stockB
+{
+	position:relative;
+	top:56px;
+	left:462px;
 }
 .content {
-	font-family: 'Encode Sans', sans-serif;
-	font-weight: 600;
+	font-family: 'OneTwoPunch BB', sans-serif;
+	font-weight: 500;
 	left: 18%;
 	position:absolute;
 	text-align: center;
-	top: 26px;
+	top: 18px;
 	color: #fff;
 	font-size: 34px;
 	width: 58%;
 	vertical-align: middle;
 }
+.contentCurPlayerA {
+	font-family: 'OneTwoPunch BB', sans-serif;
+	font-weight: 500;
+	left: 18%;
+	position:absolute;
+	text-align: center;
+	top: 56px;
+	color: #fff;
+	font-size: 30px;
+	width: 59%;
+	vertical-align: middle;
+}
+.contentCurPlayerB {
+	font-family: 'OneTwoPunch BB', sans-serif;
+	font-weight: 500;
+	right: 22%;
+	position:absolute;
+	text-align: center;
+	top: 56px;
+	color: #fff;
+	font-size: 30px;
+	width: 59%;
+	vertical-align: middle;
+}
 .contentRight {
-	font-family: 'Encode Sans', sans-serif;
-	font-weight: 600;
+	font-family: 'OneTwoPunch BB', sans-serif;
+	font-weight: 500;
 	position:absolute;
 	right: 23%;
 	text-align: center;
-	top: 26px;
+	top: 18px;
 	color: #fff;
 	font-size: 34px;
 	width: 58%;
 	vertical-align: middle;
 }
 .contentDownRight {
-	font-family: 'Encode Sans', sans-serif;
-	font-weight: 600;
+	font-family: 'OneTwoPunch BB', sans-serif;
+	font-weight: 500;
 	left: -5%;
 	position:absolute;
 	text-align: center;
-	top: 4px;
+	top: 7px;
 	color: #fff;
-	font-size: 26px;
+	font-size: 35px;
 	width: 100%;
 	vertical-align: middle;
 }
@@ -101,30 +141,30 @@ div
 	margin-bottom: 20px;
 }
 .contentTop {
-	font-family: 'Encode Sans', sans-serif;
-	font-weight: 600;
+	font-family: 'OneTwoPunch BB', sans-serif;
+	font-weight: 500;
 	left: 0%;
 	position:absolute;
 	text-align: center;
-	top: -6px;
+	top: 2px;
 	color: #fff;
-	font-size: 32px;
+	font-size: 38px;
 	width: 100%;
 	vertical-align: middle;
 }
 .upUI {
 	text-align: left;
 	position: absolute;
-	bottom: 42px;
-	left: 36px;
-	width: 460px;
+	bottom: 46px;
+	left: 4px;
+	width: 520px;
 }
 .upUIR {
 	text-align: right;
 	position: absolute;
-	bottom: 42px;
-	left: 910px;
-	width: 460px;
+	bottom: 46px;
+	left: 868px;
+	width: 520px;
 }
 .microphone {
 	
@@ -141,14 +181,14 @@ div
 	
 }
 .contentRightDown {
-	font-family: 'Encode Sans', sans-serif;
-	font-weight: 600;
+	font-family: 'OneTwoPunch BB', sans-serif;
+	font-weight: 500;
 	bottom: 0;
 	position:absolute;
 	text-align: center;
 	top: 15px;
 	color: #fff;
-	font-size: 36px;
+	font-size: 40px;
 	width: 100%;
 	vertical-align: middle;
 }
@@ -169,10 +209,10 @@ div
 	top: 260px;
 	width: 500px;
 	right: 60px;
-	font-family: 'Encode Sans', sans-serif;
-	font-weight: 600;
+	font-family: 'OneTwoPunch BB', sans-serif;
+	font-weight: 500;
 	color: #fff;
-	font-size: 26px;
+	font-size: 30px;
 	text-align: center;
 }
 
@@ -182,45 +222,41 @@ div
 	top: 545px;
 	width: 500px;
 	right: 60px;
-	font-family: 'Encode Sans', sans-serif;
-	font-weight: 600;
+	font-family: 'OneTwoPunch BB', sans-serif;
+	font-weight: 500;
 	color: #fff;
-	font-size: 26px;
+	font-size: 30px;
 	text-align: center;
 }
 .characterImgP1 {
-	font-family: 'Encode Sans', sans-serif;
-	font-weight: 600;
+	font-family: 'OneTwoPunch BB', sans-serif;
+	font-weight: 500;
 	position:absolute;
-	top: 6px;
+	top: 14px;
 	left: -9px;
 	height: 59px;
 }
 .characterImgP2 {
-	font-family: 'Encode Sans', sans-serif;
-	font-weight: 600;
+	font-family: 'OneTwoPunch BB', sans-serif;
+	font-weight: 500;
 	position:absolute;
-	top: 6px;
+	top: 14px;
 	right: -9px;
 	height: 59px;
 }
 .flagImgP2 {
-	font-family: 'Encode Sans', sans-serif;
-	font-weight: 600;
+	font-family: 'OneTwoPunch BB', sans-serif;
+	font-weight: 500;
 	position:absolute;
-	top: 28px;
+	top: 16px;
 	right: 2px;
-	height: 50px;
-	width: 80px;
 }
 .flagImgP1 {
-	font-family: 'Encode Sans', sans-serif;
-	font-weight: 600;
+	font-family: 'OneTwoPunch BB', sans-serif;
+	font-weight: 500;
 	position:absolute;
-	top: 28px;
+	top: 16px;
 	left: 2px;
-	height: 50px;
-	width: 80px;
 }
 .scoreboardBottomRight {
 

@@ -1,0 +1,300 @@
+div
+{
+	text-shadow:
+    -0.25px -0.25px 1.75px #444,
+    0.25px -0.25px 1.75px #444,
+    -0.25px 0.25px 1.75px #444,
+    0.25px 0.25px 1.75px #444,
+	0px 0px 6px #000;	
+}
+
+.upLeftCharacterName {
+	position:absolute;
+	left: 0;
+	top: 0;
+}
+.upRightCharacterName {
+	position:absolute;
+	top: 0;
+	right: 0;
+}
+.scoreboardBottomLeft {
+
+}
+.background {
+	position:absolute;
+	height: 1080px;
+	width: 1920px;
+	left: 0;
+	top: 0;
+	z-index: -1;
+}
+.scoreboardContainerLeft
+{
+	position: absolute;
+	top: -4px;
+	width: 920px;
+	left: 0%;
+}
+.scoreboardContainerRight{
+	position: absolute;
+	top: -4px;
+	right: 80px;
+	width: 920px;
+}
+.scoreboardContainerMiddle{
+	font-family: 'OneTwoPunch BB', sans-serif;
+	color: #fff;
+	position: absolute;
+	text-align: center;
+	top: 14px;
+	right: 43%;
+	width: 270px;
+}
+.flagL{
+	position: absolute;
+	left: 516px;
+	top: 4px;
+	text-align: center;
+	width: 200px;
+}
+.flagR{
+	position: absolute;
+	right: 554px;
+	top: 4px;
+	text-align: center;
+	width:200px;
+}
+.stockA
+{
+	position:relative;
+	left:120px;
+	top:56px;
+}
+.stockB
+{
+	position:relative;
+	top:56px;
+	left:462px;
+}
+.crewChar {
+	position:relative;
+	width: 64px;
+	left: 6px;
+	top: 8px;
+	margin-bottom: -48px;
+	font-family: 'OneTwoPunch BB', sans-serif;
+	font-weight: 500;
+	text-align: right;
+	color: #fff;
+	font-size: 32px;
+	vertical-align: middle;
+}
+.crewMember {
+	position:relative;
+	width: 382px;
+	top: 16px;
+	margin-bottom: 2px;
+	font-family: 'OneTwoPunch BB', sans-serif;
+	font-weight: 500;
+	text-align: right;
+	color: #fff;
+	font-size: 32px;
+	vertical-align: middle;
+}
+.content {
+	font-family: 'OneTwoPunch BB', sans-serif;
+	font-weight: 500;
+	left: 18%;
+	position:absolute;
+	text-align: center;
+	top: 34px;
+	color: #fff;
+	font-size: 64px;
+	width: 68%;
+	vertical-align: middle;
+}
+.contentCurPlayerA {
+	font-family: 'OneTwoPunch BB', sans-serif;
+	font-weight: 500;
+	left: 18%;
+	position:absolute;
+	text-align: center;
+	top: 56px;
+	color: #fff;
+	font-size: 30px;
+	width: 59%;
+	vertical-align: middle;
+}
+.contentCurPlayerB {
+	font-family: 'OneTwoPunch BB', sans-serif;
+	font-weight: 500;
+	right: 22%;
+	position:absolute;
+	text-align: center;
+	top: 56px;
+	color: #fff;
+	font-size: 30px;
+	width: 59%;
+	vertical-align: middle;
+}
+.contentRight {
+	font-family: 'OneTwoPunch BB', sans-serif;
+	font-weight: 500;
+	position:absolute;
+	right: 13%;
+	text-align: center;
+	top: 34px;
+	color: #fff;
+	font-size: 64px;
+	width: 68%;
+	vertical-align: middle;
+}
+.contentDownRight {
+	font-family: 'OneTwoPunch BB', sans-serif;
+	font-weight: 500;
+	left: -5%;
+	position:absolute;
+	text-align: center;
+	top: 7px;
+	color: #fff;
+	font-size: 28px;
+	width: 100%;
+	vertical-align: middle;
+}
+.contentDownRightText {
+	margin-bottom: 20px;
+}
+.contentTop {
+	font-family: 'OneTwoPunch BB', sans-serif;
+	font-weight: 500;
+	left: 0%;
+	position:absolute;
+	text-align: center;
+	top: 2px;
+	color: #fff;
+	font-size: 38px;
+	width: 100%;
+	vertical-align: middle;
+}
+.upUI {
+	text-align: left;
+	position: absolute;
+	bottom: 46px;
+	left: 14px;
+	width: 520px;
+}
+.upUIR {
+	text-align: right;
+	position: absolute;
+	bottom: 46px;
+	right: 18px;
+	width: 520px;
+}
+.microphone {
+	
+}
+.rightDownContainer
+{
+	position: absolute;
+	top: 645px;
+	right: 0px;
+	width: 372px;
+}
+.rightDown
+{
+	
+}
+.contentRightDown {
+	font-family: 'OneTwoPunch BB', sans-serif;
+	font-weight: 500;
+	bottom: 0;
+	position:absolute;
+	text-align: center;
+	top: 15px;
+	color: #fff;
+	font-size: 40px;
+	width: 100%;
+	vertical-align: middle;
+}
+.sponsorImg {
+	position:relative;
+	top:-4px;
+	vertical-align: middle;
+	margin-bottom: 0px;
+}
+.microphoneImage {
+	vertical-align: middle;
+	margin-bottom: 6px;
+	
+}
+.player1StreamCamName
+{
+	position:absolute;
+	top: 260px;
+	width: 500px;
+	right: 60px;
+	font-family: 'OneTwoPunch BB', sans-serif;
+	font-weight: 500;
+	color: #fff;
+	font-size: 30px;
+	text-align: center;
+}
+
+.player2StreamCamName
+{
+	position:absolute;
+	top: 545px;
+	width: 500px;
+	right: 60px;
+	font-family: 'OneTwoPunch BB', sans-serif;
+	font-weight: 500;
+	color: #fff;
+	font-size: 30px;
+	text-align: center;
+}
+.characterImgP1 {
+	font-family: 'OneTwoPunch BB', sans-serif;
+	font-weight: 500;
+	position:absolute;
+	top: 14px;
+	left: -9px;
+	height: 59px;
+}
+.characterImgP2 {
+	font-family: 'OneTwoPunch BB', sans-serif;
+	font-weight: 500;
+	position:absolute;
+	top: 14px;
+	right: -9px;
+	height: 59px;
+}
+.flagImgP2 {
+	font-family: 'OneTwoPunch BB', sans-serif;
+	font-weight: 500;
+	position:absolute;
+	top: 16px;
+	right: 2px;
+}
+.flagImgP1 {
+	font-family: 'OneTwoPunch BB', sans-serif;
+	font-weight: 500;
+	position:absolute;
+	top: 16px;
+	left: 2px;
+}
+.scoreboardBottomRight {
+
+}
+.dummy
+{
+	
+}
+.sponsors {
+	position: absolute;
+	left: 250px;
+	top: 50px;
+	
+}
+body {
+}

@@ -11,7 +11,7 @@ function updateInformation()
 		$('#player1Text').text(json.Player1.name);
 		$('#player2Text').text(json.Player2.name);
 		// play with font widths
-		if($('#player1Text').text().length > 22) {
+		if($('#player1Text').text().length > 20) {
 			$('#player1Text').css("font-stretch", "condensed");
 		}
 		else if($('#player1Text').text().length < 14) {
@@ -21,7 +21,7 @@ function updateInformation()
 			$('#player1Text').css("font-stretch", "normal");
 		}
 		
-		if($('#player2Text').text().length > 22) {
+		if($('#player2Text').text().length > 20) {
 			$('#player2Text').css("font-stretch", "condensed");
 		}
 		else if($('#player2Text').text().length < 14) {
@@ -56,8 +56,8 @@ function updateInformation()
 			$('#characterIMGP1').css("height", "74px");
 			$('#characterIMGP2').css("width", "106px");
 			$('#characterIMGP2').css("height", "74px");
-			$('#characterIMGP1').css("left", "-19px");
-			$('#characterIMGP2').css("right", "-19px");
+			$('#characterIMGP1').css("left", "-9px");
+			$('#characterIMGP2').css("right", "-9px");
 		}
 		else if(json.iconStyle == "LTESTOCK")
 		{
@@ -94,8 +94,8 @@ function updateInformation()
 		}
 		else
 		{
-			$('#characterIMGP1').css("left", "-19px");
-			$('#characterIMGP2').css("right", "-19px");
+			$('#characterIMGP1').css("left", "-9px");
+			$('#characterIMGP2').css("right", "-9px");
 			$('#characterIMGP1').attr('src', "img/no/" + json.Player1.character.icon);
 			$('#characterIMGP2').attr('src', "img/no/" + json.Player2.character.icon);
 		}
@@ -146,18 +146,15 @@ function flagFades()
 {
 	if(nextFlagFade == "country")
 	{
-		/*
 		nextFlagFade = "character"
 		$('#characterIMGP1').fadeOut(fadeAnimationSpeed);
 		$('#flagIMGP1').fadeIn(fadeAnimationSpeed);
 		$('#characterIMGP2').fadeOut(fadeAnimationSpeed);
 		$('#flagIMGP2').fadeIn(fadeAnimationSpeed);
 		setTimeout("flagFades()", fadeSpeed);
-		*/
 	}
 	else
 	{
-		/*
 		nextFlagFade = "country"
 		$('#flagIMGP1').fadeOut(fadeAnimationSpeed);
 		$('#characterIMGP1').fadeIn(fadeAnimationSpeed);
@@ -165,7 +162,6 @@ function flagFades()
 		$('#characterIMGP2').fadeIn(fadeAnimationSpeed);
 		
 		setTimeout("flagFades()", fadeSpeed);
-		*/
 	}
 }
 function fadeEnd()

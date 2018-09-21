@@ -2,6 +2,16 @@
 	"sponsors":
 	[
 		{"name": "None", "icon":"none"},
+		{"name": "Smash@Wageningen", "icon":"saw.png"},
+		{"name": "PEPIS", "icon":"pepis.png"},
+		{"name": "Re-Volt.io", "icon":"rvio.png"},
+		{"name": "Jumbo", "icon":"jumbo.png"},
+		{"name": "ASE", "icon":"ase.png"},
+		{"name": "Hyperfocus", "icon":"hype.png"},
+		{"name": "Zwitsal", "icon":"zwitsal.png"},
+		{"name": "Ace Gordon", "icon":"ace.png"},
+		{"name": "Salt Factory", "icon":"saltfactory.png"},
+		{"name": "Zwitsal", "icon":"zwitsal.png"},
 		{"name": "ShrekBoards", "icon":"shrekboards.png"},
 		{"name": "Modulous", "icon":"modulous.png"},
 		{"name": "MVG", "icon":"mvg.png"}

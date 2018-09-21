@@ -1,0 +1,106 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" 
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<script type="text/javascript" src="js/jquery.js"></script>
+	<script type="text/javascript" src="js/common.js"></script>
+	<script type="text/javascript" src="js/paintbrush.js"></script>
+	<script type="text/javascript" src="js/scoreboardcrew.js"></script>
+	<link rel="stylesheet" type="text/css" href="css/scoreboardcrewteam.css">
+</head>
+
+<body id="body" >
+<!-- <img class="background" src="img/overlay.png"> -->
+<div id="ui" style="display: none;">
+<!--
+<div class="player1StreamCamName" id="player1streamname">Trifasia & JJ | Overtriforce</div>
+<a class="player2StreamCamName" id="player2streamname">Trifasia & JJ | Overtriforce</a>
+-->
+<img class="sponsors" src="img/nocolor/sponsor.png">
+
+<div class="rightDownContainer">
+	<div class="contentDownRight" id="microphone">
+		<img class="microphoneImage" src="img/nocolor/microphone.png"> <a class="contentDownRightText" id="casterText">RVIO | Rolling Odie</a>
+	</div>
+	<div class="contentDownRight" id="streamer">
+		<img class="microphoneImage" src="img/nocolor/camera.png"> <a class="contentDownRightText"  id="streamerText">RVIO | Rolling Odie</a>
+	</div>
+</div>
+
+<div class="scoreboardContainerLeft">
+	<div class="content">
+		<img class= "sponsorImg" id="sponsorImgP1" src=""> <a id="crew1Text">Player1</a>
+		<div class= "scorefield" style="width:96px; text-align:center; top: -19px; left: -134px; position:absolute;">
+			<a id="crew1Score" style="text-align: center;font-weight: 9001 !important; font-size:108px;">0</a>
+		</div>
+	</div>
+
+	<div class="crewPlaceholder" style="position:relative;height:102px;width:200px;"></div>
+	<div class="crewMember" id="crewA1">
+		<div class="crewChar" id="CrewcharA1"><img id="crewCharA1" src="img/lte2hd/random.png" style="width:48px;height:48px;"></div>
+		<a id="crewA1Text" style="font-stretch: condensed;font-weight: 500 !important;">I am a test</a>
+		<img id="stockIMGA1" src="img/stock3.png" style="position:relative; top:10px;">
+	</div>
+	<div class="crewMember" id="crewA2">
+		<div class="crewChar" id="CrewcharA2"><img id="crewCharA2" src="img/lte2hd/random.png" style="width:48px;height:48px;"></div>
+		<a id="crewA2Text" style="font-stretch: condensed;font-weight: 500 !important;">I am also a test</a>
+		<img id="stockIMGA2" src="img/stock3.png" style="position:relative; top:10px;">
+	</div>
+	<div class="crewMember" id="crewA3">
+		<div class="crewChar" id="CrewcharA3"><img id="crewCharA3" src="img/lte2hd/random.png" style="width:48px;height:48px;"></div>
+		<a id="crewA3Text" style="font-stretch: condensed;font-weight: 500 !important;">I am the third test</a>
+		<img id="stockIMGA3" src="img/stock3.png" style="position:relative; top:10px;">
+	</div>
+	<div class="crewMember" id="crewA4">
+		<div class="crewChar" id="CrewcharA4"><img id="crewCharA4" src="img/lte2hd/random.png" style="width:48px;height:48px;"></div>
+		<a id="crewA4Text" style="font-stretch: condensed;font-weight: 500 !important;">I fight for my friends</a>
+		<img id="stockIMGA4" src="img/stock3.png" style="position:relative; top:10px;">
+	</div>
+</div>
+<div class="scoreboardContainerMiddle">
+			<a id="matchType" style="text-align: center;font-weight: 500 !important; font-size:46px;">Crew<br />Battle</a>
+</div>
+<div class="scoreboardContainerRight">
+	<div class="contentRight">
+		<img class= "sponsorImg" id="sponsorImgP2" src=""> <a id="crew2Text">Player1</a>
+		<div class= "scorefield" style="width:96px; text-align:center; top: -19px; right: -149px; position:absolute;">
+			<a id="crew2Score" style="text-align: center;font-weight: 9001 !important; font-size:108px;">0</a>
+		</div>
+	</div>
+	
+	<div class="crewPlaceholder" style="position:relative;height:103px;width:200px;"></div>
+	<div class="crewMember" id="crewB1" style="left:638px;">
+		<div class="crewChar" id="CrewcharB1"><img id="crewCharB1" src="img/lte2hd/random.png" style="position:relative; left:270px; width:48px;height:48px;"></div>
+		<a id="crewB1Text" style="font-stretch: condensed;font-weight: 500 !important;">I am a test</a>
+		<img id="stockIMGB1" src="img/stock3.png" style="position:relative; right:305px; top:10px;-webkit-transform: scaleX(-1);">
+	</div>
+	<div class="crewMember" id="crewB2" style="left:638px;">
+		<div class="crewChar" id="CrewcharB2"><img id="crewCharB2" src="img/lte2hd/random.png" style="position:relative; left:270px; width:48px;height:48px;"></div>
+		<a id="crewB2Text" style="font-stretch: condensed;font-weight: 500 !important;">I am a test</a>
+		<img id="stockIMGB2" src="img/stock3.png" style="position:relative; right:305px; top:10px;-webkit-transform: scaleX(-1);">
+	</div>
+	<div class="crewMember" id="crewB3" style="left:638px;">
+		<div class="crewChar" id="CrewcharB3"><img id="crewCharB3" src="img/lte2hd/random.png" style="position:relative; left:270px; width:48px;height:48px;"></div>
+		<a id="crewB3Text" style="font-stretch: condensed;font-weight: 500 !important;">I am a test</a>
+		<img id="stockIMGB3" src="img/stock3.png" style="position:relative; right:305px; top:10px;-webkit-transform: scaleX(-1);">
+	</div>
+	<div class="crewMember" id="crewB4" style="left:638px;">
+		<div class="crewChar" id="CrewcharB4"><img id="crewCharB4" src="img/lte2hd/random.png" style="position:relative; left:270px; width:48px;height:48px;"></div>
+		<a id="crewB4Text" style="font-stretch: condensed;font-weight: 500 !important;">I am a test</a>
+		<img id="stockIMGB4" src="img/stock3.png" style="position:relative; right:305px; top:10px;-webkit-transform: scaleX(-1);">
+	</div>
+</div>
+<div class="upUI">
+
+	<div class="contentTop" id="tournamentName">
+	test
+	</div>
+</div>
+<div class="upUIR ">
+	<div class="contentTop" id="round">
+	test
+	</div>
+</div>
+</div>
+</body>
+</html>

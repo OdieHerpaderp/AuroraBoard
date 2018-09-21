@@ -1,9 +1,14 @@
 {
 	"Flags":
 	[
+		{"name": "Austria", "icon":"austria.png"},
+		{"name": "France", "icon":"france.png"},
+		{"name": "Germany", "icon":"germany.png"},
+		{"name": "Italy", "icon":"italy.png"},
+		{"name": "Netherlands", "icon":"nl.png"},
+		{"name": "Norway", "icon":"norway.png"},
 		{"name": "Spain", "icon":"spain.png"},
 		{"name": "USA", "icon":"usa.png"},
 		{"name": "UK", "icon":"uk.png"},
-		{"name": "Spain (Republican)", "icon":"spainrep.png"}
 	]
 }
