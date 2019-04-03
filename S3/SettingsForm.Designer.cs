@@ -36,18 +36,22 @@
             this.TintingEnableCheckbox = new System.Windows.Forms.CheckBox();
             this.OkButton = new System.Windows.Forms.Button();
             this.CancelButton = new System.Windows.Forms.Button();
+            this.label125 = new System.Windows.Forms.Label();
+            this.smashGGTB = new System.Windows.Forms.TextBox();
+            this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.ServerPortbox)).BeginInit();
             this.groupBox2.SuspendLayout();
+            this.groupBox3.SuspendLayout();
             this.SuspendLayout();
             // 
             // groupBox1
             // 
             this.groupBox1.Controls.Add(this.label1);
             this.groupBox1.Controls.Add(this.ServerPortbox);
-            this.groupBox1.Location = new System.Drawing.Point(12, 12);
+            this.groupBox1.Location = new System.Drawing.Point(1, 2);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(134, 58);
+            this.groupBox1.Size = new System.Drawing.Size(134, 56);
             this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Ports";
@@ -55,7 +59,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(6, 21);
+            this.label1.Location = new System.Drawing.Point(6, 15);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(59, 13);
             this.label1.TabIndex = 1;
@@ -63,7 +67,7 @@
             // 
             // ServerPortbox
             // 
-            this.ServerPortbox.Location = new System.Drawing.Point(76, 19);
+            this.ServerPortbox.Location = new System.Drawing.Point(76, 13);
             this.ServerPortbox.Maximum = new decimal(new int[] {
             9999,
             0,
@@ -78,24 +82,24 @@
             // 
             this.groupBox2.Controls.Add(this.ColorTextBox);
             this.groupBox2.Controls.Add(this.TintingEnableCheckbox);
-            this.groupBox2.Location = new System.Drawing.Point(152, 12);
+            this.groupBox2.Location = new System.Drawing.Point(137, 2);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(97, 73);
+            this.groupBox2.Size = new System.Drawing.Size(97, 56);
             this.groupBox2.TabIndex = 1;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Tinting";
             // 
             // ColorTextBox
             // 
-            this.ColorTextBox.Location = new System.Drawing.Point(7, 38);
+            this.ColorTextBox.Location = new System.Drawing.Point(4, 32);
             this.ColorTextBox.Name = "ColorTextBox";
-            this.ColorTextBox.Size = new System.Drawing.Size(84, 20);
+            this.ColorTextBox.Size = new System.Drawing.Size(90, 20);
             this.ColorTextBox.TabIndex = 1;
             // 
             // TintingEnableCheckbox
             // 
             this.TintingEnableCheckbox.AutoSize = true;
-            this.TintingEnableCheckbox.Location = new System.Drawing.Point(6, 19);
+            this.TintingEnableCheckbox.Location = new System.Drawing.Point(6, 15);
             this.TintingEnableCheckbox.Name = "TintingEnableCheckbox";
             this.TintingEnableCheckbox.Size = new System.Drawing.Size(90, 17);
             this.TintingEnableCheckbox.TabIndex = 0;
@@ -105,7 +109,7 @@
             // 
             // OkButton
             // 
-            this.OkButton.Location = new System.Drawing.Point(12, 91);
+            this.OkButton.Location = new System.Drawing.Point(84, 114);
             this.OkButton.Name = "OkButton";
             this.OkButton.Size = new System.Drawing.Size(75, 23);
             this.OkButton.TabIndex = 2;
@@ -115,7 +119,7 @@
             // 
             // CancelButton
             // 
-            this.CancelButton.Location = new System.Drawing.Point(93, 91);
+            this.CancelButton.Location = new System.Drawing.Point(159, 114);
             this.CancelButton.Name = "CancelButton";
             this.CancelButton.Size = new System.Drawing.Size(75, 23);
             this.CancelButton.TabIndex = 3;
@@ -123,11 +127,41 @@
             this.CancelButton.UseVisualStyleBackColor = true;
             this.CancelButton.Click += new System.EventHandler(this.CancelButton_Click);
             // 
+            // label125
+            // 
+            this.label125.AutoSize = true;
+            this.label125.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label125.Location = new System.Drawing.Point(1, 12);
+            this.label125.Name = "label125";
+            this.label125.Size = new System.Drawing.Size(168, 15);
+            this.label125.TabIndex = 20;
+            this.label125.Text = "Smash.GG tournament name";
+            // 
+            // smashGGTB
+            // 
+            this.smashGGTB.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.smashGGTB.Location = new System.Drawing.Point(3, 28);
+            this.smashGGTB.Name = "smashGGTB";
+            this.smashGGTB.Size = new System.Drawing.Size(226, 21);
+            this.smashGGTB.TabIndex = 21;
+            // 
+            // groupBox3
+            // 
+            this.groupBox3.Controls.Add(this.smashGGTB);
+            this.groupBox3.Controls.Add(this.label125);
+            this.groupBox3.Location = new System.Drawing.Point(1, 59);
+            this.groupBox3.Name = "groupBox3";
+            this.groupBox3.Size = new System.Drawing.Size(232, 54);
+            this.groupBox3.TabIndex = 2;
+            this.groupBox3.TabStop = false;
+            this.groupBox3.Text = "Smash.GG";
+            // 
             // SettingsForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(273, 117);
+            this.ClientSize = new System.Drawing.Size(235, 139);
+            this.Controls.Add(this.groupBox3);
             this.Controls.Add(this.CancelButton);
             this.Controls.Add(this.OkButton);
             this.Controls.Add(this.groupBox2);
@@ -141,6 +175,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.ServerPortbox)).EndInit();
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
+            this.groupBox3.ResumeLayout(false);
+            this.groupBox3.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -155,5 +191,8 @@
         private System.Windows.Forms.Button OkButton;
         private System.Windows.Forms.Button CancelButton;
         private System.Windows.Forms.TextBox ColorTextBox;
+        private System.Windows.Forms.Label label125;
+        private System.Windows.Forms.TextBox smashGGTB;
+        private System.Windows.Forms.GroupBox groupBox3;
     }
 }

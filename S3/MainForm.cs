@@ -12,6 +12,9 @@ using System.IO;
 using ImageMagick;
 using Nancy.Hosting.Self;
 using Newtonsoft.Json;
+using System.Net;
+using Newtonsoft.Json.Linq;
+
 namespace S3
 {
     public partial class MainForm : Form
@@ -23,30 +26,34 @@ namespace S3
             Globals.CurrentCrewUpdate = new CrewUpdate();
 
             Globals.CurrentCrewUpdate.Crew1 = "TESTA";
-            Globals.CurrentCrewUpdate.Crew1Stocks = 16;
+            Globals.CurrentCrewUpdate.Crew1Stocks = 20;
 
             Globals.CurrentCrewUpdate.Crew2 = "TESTB";
-            Globals.CurrentCrewUpdate.Crew2Stocks = 16;
+            Globals.CurrentCrewUpdate.Crew2Stocks = 20;
 
             Globals.CurrentCrewUpdate.A1 = new Crewmember();
             Globals.CurrentCrewUpdate.A2 = new Crewmember();
             Globals.CurrentCrewUpdate.A3 = new Crewmember();
             Globals.CurrentCrewUpdate.A4 = new Crewmember();
+            Globals.CurrentCrewUpdate.A5 = new Crewmember();
 
             Globals.CurrentCrewUpdate.B1 = new Crewmember();
             Globals.CurrentCrewUpdate.B2 = new Crewmember();
             Globals.CurrentCrewUpdate.B3 = new Crewmember();
             Globals.CurrentCrewUpdate.B4 = new Crewmember();
+            Globals.CurrentCrewUpdate.B5 = new Crewmember();
 
             Globals.CurrentCrewUpdate.A1.name = "? ? ?";
             Globals.CurrentCrewUpdate.A2.name = "? ? ?";
             Globals.CurrentCrewUpdate.A3.name = "? ? ?";
             Globals.CurrentCrewUpdate.A4.name = "? ? ?";
+            Globals.CurrentCrewUpdate.A5.name = "? ? ?";
 
             Globals.CurrentCrewUpdate.B1.name = "? ? ?";
             Globals.CurrentCrewUpdate.B2.name = "? ? ?";
             Globals.CurrentCrewUpdate.B3.name = "? ? ?";
             Globals.CurrentCrewUpdate.B4.name = "? ? ?";
+            Globals.CurrentCrewUpdate.B5.name = "? ? ?";
 
             Globals.bracketInfo = new BracketUpdate();
             // Singles
@@ -92,13 +99,16 @@ namespace S3
             Globals.CurrentInformationUpdate.Player2 = new Player();
             Globals.CurrentInformationUpdate.Player1.name = "EIREXE";
             Globals.CurrentInformationUpdate.Player2.name = "BoastingToast";
+            Globals.CurrentInformationUpdate.Player1.color = "Red";
+            Globals.CurrentInformationUpdate.Player2.color = "Blue";
             parseComboBoxItems();
             SendUpdate();
         }
 
         private void Form1_Load(object sender, EventArgs e)
         {
-
+            colorCombo1.SelectedIndex = 0;
+            colorCombo2.SelectedIndex = 1;
         }
 
         private void SendUpdateButton_Click(object sender, EventArgs e)
@@ -110,8 +120,8 @@ namespace S3
 
         private void SendUpdate()
         {
-            Globals.CurrentInformationUpdate.Player1.name = Player1Name.Text;
-            Globals.CurrentInformationUpdate.Player2.name = Player2Name.Text;
+            Globals.CurrentInformationUpdate.Player1.name = Player1NameCB.Text;
+            Globals.CurrentInformationUpdate.Player2.name = Player2NameCB.Text;
             Globals.CurrentInformationUpdate.Player1.sponsor = (Sponsor)((ComboboxItem)Player1Sponsor.SelectedItem).Value;
             Globals.CurrentInformationUpdate.Player2.sponsor = (Sponsor)((ComboboxItem)Player2Sponsor.SelectedItem).Value;
             Globals.CurrentInformationUpdate.Player1.character = (Character)((ComboboxItem)Player1Character.SelectedItem).Value;
@@ -274,6 +284,8 @@ namespace S3
             Globals.CurrentCrewUpdate.A3.character = (Character)((ComboboxItem)crewCharA3.SelectedItem).Value;
             Globals.CurrentCrewUpdate.A4.name = tbA4.Text;
             Globals.CurrentCrewUpdate.A4.character = (Character)((ComboboxItem)crewCharA4.SelectedItem).Value;
+            Globals.CurrentCrewUpdate.A5.name = tbA5.Text;
+            Globals.CurrentCrewUpdate.A5.character = (Character)((ComboboxItem)crewCharA4.SelectedItem).Value;
 
             Globals.CurrentCrewUpdate.B1.name = tbB1.Text;
             Globals.CurrentCrewUpdate.B1.character = (Character)((ComboboxItem)crewCharB1.SelectedItem).Value;
@@ -283,6 +295,8 @@ namespace S3
             Globals.CurrentCrewUpdate.B3.character = (Character)((ComboboxItem)crewCharB3.SelectedItem).Value;
             Globals.CurrentCrewUpdate.B4.name = tbB4.Text;
             Globals.CurrentCrewUpdate.B4.character = (Character)((ComboboxItem)crewCharB4.SelectedItem).Value;
+            Globals.CurrentCrewUpdate.B5.name = tbB5.Text;
+            Globals.CurrentCrewUpdate.B5.character = (Character)((ComboboxItem)crewCharB4.SelectedItem).Value;
         }
             private void parseComboBoxItems()
         {
@@ -302,11 +316,13 @@ namespace S3
                 crewCharA2.Items.Add(item);
                 crewCharA3.Items.Add(item);
                 crewCharA4.Items.Add(item);
+                crewCharA5.Items.Add(item);
 
                 crewCharB1.Items.Add(item);
                 crewCharB2.Items.Add(item);
                 crewCharB3.Items.Add(item);
                 crewCharB4.Items.Add(item);
+                crewCharB5.Items.Add(item);
             }
             Player1Character.SelectedIndex = 0;
             Player2Character.SelectedIndex = 0;
@@ -317,21 +333,25 @@ namespace S3
             crewCharA2.Sorted = true;
             crewCharA3.Sorted = true;
             crewCharA4.Sorted = true;
+            crewCharA5.Sorted = true;
 
             crewCharB1.Sorted = true;
             crewCharB2.Sorted = true;
             crewCharB3.Sorted = true;
             crewCharB4.Sorted = true;
+            crewCharB5.Sorted = true;
 
             crewCharA1.SelectedIndex = 0;
             crewCharA2.SelectedIndex = 0;
             crewCharA3.SelectedIndex = 0;
             crewCharA4.SelectedIndex = 0;
+            crewCharA5.SelectedIndex = 0;
 
             crewCharB1.SelectedIndex = 0;
             crewCharB2.SelectedIndex = 0;
             crewCharB3.SelectedIndex = 0;
             crewCharB4.SelectedIndex = 0;
+            crewCharB5.SelectedIndex = 0;
 
             string sponsors = Path.Combine(Path.GetDirectoryName(System.Reflection.Assembly.GetExecutingAssembly().Location), "sponsors.json");
             string sponsorsContents = File.ReadAllText(sponsors);
@@ -576,6 +596,99 @@ namespace S3
         }
 
         private void groupBox4_Enter(object sender, EventArgs e)
+        {
+
+        }
+
+        private void tbB4_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label123_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void colorCombo1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            Globals.CurrentInformationUpdate.Player1.color = colorCombo1.SelectedItem.ToString() + ".png";
+        }
+
+        private void colorCombo2_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            Globals.CurrentInformationUpdate.Player2.color = colorCombo2.SelectedItem.ToString() + ".png";
+        }
+
+        private void Player1Character_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            string test = Convert.ToString(Player1Character.SelectedItem);
+            if (test == " Team Red")
+            {
+                colorCombo1.SelectedIndex = 0;
+            }
+            else if (test == " Team Blue")
+            {
+                colorCombo1.SelectedIndex = 1;
+            }
+            else if (test == " Team Yellow")
+            {
+                colorCombo1.SelectedIndex = 2;
+            }
+            else if (test == " Team Green")
+            {
+                colorCombo1.SelectedIndex = 3;
+            }
+        }
+
+        private void Player2Character_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            string test = Convert.ToString(Player2Character.SelectedItem);
+            if (test == " Team Red")
+            {
+                colorCombo2.SelectedIndex = 0;
+            }
+            else if (test == " Team Blue")
+            {
+                colorCombo2.SelectedIndex = 1;
+            }
+            else if (test == " Team Yellow")
+            {
+                colorCombo2.SelectedIndex = 2;
+            }
+            else if (test == " Team Green")
+            {
+                colorCombo2.SelectedIndex = 3;
+            }
+        }
+
+        private void Player1Name_TextChanged(object sender, EventArgs e)
+        {
+
+            
+        }
+
+        private void getParticipants()
+        {
+
+        }
+
+        private void label125_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void smashGGButton_Click(object sender, EventArgs e)
+        {
+            getParticipants();
+        }
+
+        private void Player1NameCB_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button1_Click(object sender, EventArgs e)
         {
 
         }

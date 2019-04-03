@@ -40,6 +40,8 @@
             this.tabPage1 = new System.Windows.Forms.TabPage();
             this.swapChars = new System.Windows.Forms.Button();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.colorCombo1 = new System.Windows.Forms.ComboBox();
+            this.label123 = new System.Windows.Forms.Label();
             this.label121 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.Player1Score = new System.Windows.Forms.NumericUpDown();
@@ -50,6 +52,8 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.colorCombo2 = new System.Windows.Forms.ComboBox();
+            this.label124 = new System.Windows.Forms.Label();
             this.label122 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.Player2Score = new System.Windows.Forms.NumericUpDown();
@@ -64,6 +68,10 @@
             this.radioLTEStock = new System.Windows.Forms.RadioButton();
             this.radioPM = new System.Windows.Forms.RadioButton();
             this.radioLTE = new System.Windows.Forms.RadioButton();
+            this.groupBox23 = new System.Windows.Forms.GroupBox();
+            this.radioBO3 = new System.Windows.Forms.RadioButton();
+            this.radioOther = new System.Windows.Forms.RadioButton();
+            this.radioBO5 = new System.Windows.Forms.RadioButton();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.cbSwapFields = new System.Windows.Forms.CheckBox();
             this.label10 = new System.Windows.Forms.Label();
@@ -75,10 +83,6 @@
             this.label12 = new System.Windows.Forms.Label();
             this.CasterTextbox = new System.Windows.Forms.TextBox();
             this.StreamerTextbox = new System.Windows.Forms.TextBox();
-            this.groupBox23 = new System.Windows.Forms.GroupBox();
-            this.radioBO3 = new System.Windows.Forms.RadioButton();
-            this.radioOther = new System.Windows.Forms.RadioButton();
-            this.radioBO5 = new System.Windows.Forms.RadioButton();
             this.tabPage5 = new System.Windows.Forms.TabPage();
             this.groupBox32 = new System.Windows.Forms.GroupBox();
             this.label107 = new System.Windows.Forms.Label();
@@ -91,6 +95,11 @@
             this.label106 = new System.Windows.Forms.Label();
             this.crewCharA3 = new System.Windows.Forms.ComboBox();
             this.groupBox28 = new System.Windows.Forms.GroupBox();
+            this.groupBox38 = new System.Windows.Forms.GroupBox();
+            this.label119 = new System.Windows.Forms.Label();
+            this.tbB5 = new System.Windows.Forms.TextBox();
+            this.label120 = new System.Windows.Forms.Label();
+            this.crewCharB5 = new System.Windows.Forms.ComboBox();
             this.groupBox34 = new System.Windows.Forms.GroupBox();
             this.label111 = new System.Windows.Forms.Label();
             this.tbB2 = new System.Windows.Forms.TextBox();
@@ -116,6 +125,11 @@
             this.label94 = new System.Windows.Forms.Label();
             this.tbCrewNameB = new System.Windows.Forms.TextBox();
             this.groupBox25 = new System.Windows.Forms.GroupBox();
+            this.groupBox33 = new System.Windows.Forms.GroupBox();
+            this.label109 = new System.Windows.Forms.Label();
+            this.tbA5 = new System.Windows.Forms.TextBox();
+            this.label110 = new System.Windows.Forms.Label();
+            this.crewCharA5 = new System.Windows.Forms.ComboBox();
             this.groupBox30 = new System.Windows.Forms.GroupBox();
             this.label88 = new System.Windows.Forms.Label();
             this.tbA2 = new System.Windows.Forms.TextBox();
@@ -317,6 +331,10 @@
             this.tbDWSA1 = new System.Windows.Forms.TextBox();
             this.label105 = new System.Windows.Forms.Label();
             this.tabPage4 = new System.Windows.Forms.TabPage();
+            this.Player1NameCB = new System.Windows.Forms.ComboBox();
+            this.Player2NameCB = new System.Windows.Forms.ComboBox();
+            this.buttonUpdatePlayers = new System.Windows.Forms.Button();
+            this.buttonAutoFill = new System.Windows.Forms.Button();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.groupBox1.SuspendLayout();
@@ -324,19 +342,21 @@
             this.groupBox2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.Player2Score)).BeginInit();
             this.groupBox5.SuspendLayout();
+            this.groupBox23.SuspendLayout();
             this.groupBox3.SuspendLayout();
             this.groupBox4.SuspendLayout();
-            this.groupBox23.SuspendLayout();
             this.tabPage5.SuspendLayout();
             this.groupBox32.SuspendLayout();
             this.groupBox31.SuspendLayout();
             this.groupBox28.SuspendLayout();
+            this.groupBox38.SuspendLayout();
             this.groupBox34.SuspendLayout();
             this.groupBox35.SuspendLayout();
             this.groupBox36.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numStockB)).BeginInit();
             this.groupBox37.SuspendLayout();
             this.groupBox25.SuspendLayout();
+            this.groupBox33.SuspendLayout();
             this.groupBox30.SuspendLayout();
             this.groupBox29.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numStockA)).BeginInit();
@@ -412,7 +432,7 @@
             this.FlagsCombo.FormattingEnabled = true;
             this.FlagsCombo.Location = new System.Drawing.Point(106, 105);
             this.FlagsCombo.Name = "FlagsCombo";
-            this.FlagsCombo.Size = new System.Drawing.Size(72, 23);
+            this.FlagsCombo.Size = new System.Drawing.Size(76, 23);
             this.FlagsCombo.TabIndex = 7;
             // 
             // FlagsComboP2
@@ -420,17 +440,17 @@
             this.FlagsComboP2.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.FlagsComboP2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.FlagsComboP2.FormattingEnabled = true;
-            this.FlagsComboP2.Location = new System.Drawing.Point(107, 105);
+            this.FlagsComboP2.Location = new System.Drawing.Point(106, 105);
             this.FlagsComboP2.Name = "FlagsComboP2";
-            this.FlagsComboP2.Size = new System.Drawing.Size(72, 23);
+            this.FlagsComboP2.Size = new System.Drawing.Size(76, 23);
             this.FlagsComboP2.TabIndex = 8;
             // 
             // SendUpdateButton
             // 
             this.SendUpdateButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.SendUpdateButton.Location = new System.Drawing.Point(358, 264);
+            this.SendUpdateButton.Location = new System.Drawing.Point(373, 283);
             this.SendUpdateButton.Name = "SendUpdateButton";
-            this.SendUpdateButton.Size = new System.Drawing.Size(102, 23);
+            this.SendUpdateButton.Size = new System.Drawing.Size(88, 23);
             this.SendUpdateButton.TabIndex = 8;
             this.SendUpdateButton.Text = "Send Update";
             this.SendUpdateButton.UseVisualStyleBackColor = true;
@@ -439,7 +459,7 @@
             // SettingsButton
             // 
             this.SettingsButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.SettingsButton.Location = new System.Drawing.Point(3, 3);
+            this.SettingsButton.Location = new System.Drawing.Point(3, 233);
             this.SettingsButton.Name = "SettingsButton";
             this.SettingsButton.Size = new System.Drawing.Size(454, 23);
             this.SettingsButton.TabIndex = 14;
@@ -450,9 +470,9 @@
             // StartServer
             // 
             this.StartServer.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.StartServer.Location = new System.Drawing.Point(279, 264);
+            this.StartServer.Location = new System.Drawing.Point(286, 283);
             this.StartServer.Name = "StartServer";
-            this.StartServer.Size = new System.Drawing.Size(78, 23);
+            this.StartServer.Size = new System.Drawing.Size(88, 23);
             this.StartServer.TabIndex = 16;
             this.StartServer.Text = "Start Server";
             this.StartServer.UseVisualStyleBackColor = true;
@@ -462,7 +482,7 @@
             // 
             this.UrlLinkLabel.AutoSize = true;
             this.UrlLinkLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.UrlLinkLabel.Location = new System.Drawing.Point(6, 269);
+            this.UrlLinkLabel.Location = new System.Drawing.Point(0, 286);
             this.UrlLinkLabel.Name = "UrlLinkLabel";
             this.UrlLinkLabel.Size = new System.Drawing.Size(74, 13);
             this.UrlLinkLabel.TabIndex = 17;
@@ -475,7 +495,7 @@
             // 
             this.lblStyle.AutoSize = true;
             this.lblStyle.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblStyle.Location = new System.Drawing.Point(19, 307);
+            this.lblStyle.Location = new System.Drawing.Point(19, 352);
             this.lblStyle.Name = "lblStyle";
             this.lblStyle.Size = new System.Drawing.Size(93, 15);
             this.lblStyle.TabIndex = 15;
@@ -493,32 +513,33 @@
             this.tabControl1.Location = new System.Drawing.Point(-1, -1);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
-            this.tabControl1.Size = new System.Drawing.Size(468, 263);
+            this.tabControl1.Size = new System.Drawing.Size(468, 285);
             this.tabControl1.TabIndex = 18;
             // 
             // tabPage1
             // 
             this.tabPage1.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.tabPage1.Controls.Add(this.buttonAutoFill);
             this.tabPage1.Controls.Add(this.swapChars);
             this.tabPage1.Controls.Add(this.groupBox1);
             this.tabPage1.Controls.Add(this.groupBox2);
             this.tabPage1.Controls.Add(this.groupBox5);
+            this.tabPage1.Controls.Add(this.groupBox23);
             this.tabPage1.Controls.Add(this.groupBox3);
             this.tabPage1.Controls.Add(this.groupBox4);
-            this.tabPage1.Controls.Add(this.groupBox23);
             this.tabPage1.Location = new System.Drawing.Point(4, 22);
             this.tabPage1.Name = "tabPage1";
             this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage1.Size = new System.Drawing.Size(460, 237);
+            this.tabPage1.Size = new System.Drawing.Size(460, 259);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "Tourney";
             // 
             // swapChars
             // 
             this.swapChars.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.swapChars.Location = new System.Drawing.Point(184, 9);
+            this.swapChars.Location = new System.Drawing.Point(185, 68);
             this.swapChars.Name = "swapChars";
-            this.swapChars.Size = new System.Drawing.Size(90, 26);
+            this.swapChars.Size = new System.Drawing.Size(88, 25);
             this.swapChars.TabIndex = 19;
             this.swapChars.Text = "<- Swap ->";
             this.swapChars.UseVisualStyleBackColor = true;
@@ -527,6 +548,9 @@
             // groupBox1
             // 
             this.groupBox1.BackColor = System.Drawing.Color.Transparent;
+            this.groupBox1.Controls.Add(this.Player1NameCB);
+            this.groupBox1.Controls.Add(this.colorCombo1);
+            this.groupBox1.Controls.Add(this.label123);
             this.groupBox1.Controls.Add(this.label121);
             this.groupBox1.Controls.Add(this.label4);
             this.groupBox1.Controls.Add(this.Player1Score);
@@ -534,16 +558,43 @@
             this.groupBox1.Controls.Add(this.FlagsCombo);
             this.groupBox1.Controls.Add(this.Player1Sponsor);
             this.groupBox1.Controls.Add(this.label1);
-            this.groupBox1.Controls.Add(this.Player1Name);
             this.groupBox1.Controls.Add(this.label3);
             this.groupBox1.Controls.Add(this.label2);
             this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox1.Location = new System.Drawing.Point(0, 2);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(180, 133);
+            this.groupBox1.Size = new System.Drawing.Size(184, 157);
             this.groupBox1.TabIndex = 1;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Player 1";
+            // 
+            // colorCombo1
+            // 
+            this.colorCombo1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.colorCombo1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.colorCombo1.FormattingEnabled = true;
+            this.colorCombo1.ItemHeight = 15;
+            this.colorCombo1.Items.AddRange(new object[] {
+            "Red",
+            "Blue",
+            "Yellow",
+            "Green"});
+            this.colorCombo1.Location = new System.Drawing.Point(106, 130);
+            this.colorCombo1.Name = "colorCombo1";
+            this.colorCombo1.Size = new System.Drawing.Size(76, 23);
+            this.colorCombo1.TabIndex = 10;
+            this.colorCombo1.SelectedIndexChanged += new System.EventHandler(this.colorCombo1_SelectedIndexChanged);
+            // 
+            // label123
+            // 
+            this.label123.AutoSize = true;
+            this.label123.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label123.Location = new System.Drawing.Point(4, 134);
+            this.label123.Name = "label123";
+            this.label123.Size = new System.Drawing.Size(96, 15);
+            this.label123.TabIndex = 9;
+            this.label123.Text = "Team/Port Color";
+            this.label123.Click += new System.EventHandler(this.label123_Click);
             // 
             // label121
             // 
@@ -559,7 +610,7 @@
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(131, 53);
+            this.label4.Location = new System.Drawing.Point(137, 53);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(39, 15);
             this.label4.TabIndex = 6;
@@ -568,7 +619,7 @@
             // Player1Score
             // 
             this.Player1Score.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Player1Score.Location = new System.Drawing.Point(134, 68);
+            this.Player1Score.Location = new System.Drawing.Point(139, 68);
             this.Player1Score.Name = "Player1Score";
             this.Player1Score.Size = new System.Drawing.Size(43, 21);
             this.Player1Score.TabIndex = 2;
@@ -579,19 +630,20 @@
             this.Player1Character.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.Player1Character.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Player1Character.FormattingEnabled = true;
-            this.Player1Character.Location = new System.Drawing.Point(3, 105);
+            this.Player1Character.Location = new System.Drawing.Point(2, 105);
             this.Player1Character.Name = "Player1Character";
             this.Player1Character.Size = new System.Drawing.Size(102, 23);
             this.Player1Character.TabIndex = 4;
+            this.Player1Character.SelectedIndexChanged += new System.EventHandler(this.Player1Character_SelectedIndexChanged);
             // 
             // Player1Sponsor
             // 
             this.Player1Sponsor.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.Player1Sponsor.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Player1Sponsor.FormattingEnabled = true;
-            this.Player1Sponsor.Location = new System.Drawing.Point(3, 67);
+            this.Player1Sponsor.Location = new System.Drawing.Point(2, 67);
             this.Player1Sponsor.Name = "Player1Sponsor";
-            this.Player1Sponsor.Size = new System.Drawing.Size(126, 23);
+            this.Player1Sponsor.Size = new System.Drawing.Size(134, 23);
             this.Player1Sponsor.TabIndex = 2;
             this.Player1Sponsor.SelectedIndexChanged += new System.EventHandler(this.Player1Sponsor_SelectedIndexChanged);
             // 
@@ -599,7 +651,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(2, 15);
+            this.label1.Location = new System.Drawing.Point(2, 14);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(41, 15);
             this.label1.TabIndex = 2;
@@ -608,10 +660,11 @@
             // Player1Name
             // 
             this.Player1Name.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Player1Name.Location = new System.Drawing.Point(3, 30);
+            this.Player1Name.Location = new System.Drawing.Point(186, 335);
             this.Player1Name.Name = "Player1Name";
-            this.Player1Name.Size = new System.Drawing.Size(175, 21);
+            this.Player1Name.Size = new System.Drawing.Size(180, 21);
             this.Player1Name.TabIndex = 0;
+            this.Player1Name.TextChanged += new System.EventHandler(this.Player1Name_TextChanged);
             // 
             // label3
             // 
@@ -636,6 +689,9 @@
             // groupBox2
             // 
             this.groupBox2.BackColor = System.Drawing.Color.Transparent;
+            this.groupBox2.Controls.Add(this.Player2NameCB);
+            this.groupBox2.Controls.Add(this.colorCombo2);
+            this.groupBox2.Controls.Add(this.label124);
             this.groupBox2.Controls.Add(this.label122);
             this.groupBox2.Controls.Add(this.label5);
             this.groupBox2.Controls.Add(this.FlagsComboP2);
@@ -644,15 +700,41 @@
             this.groupBox2.Controls.Add(this.label7);
             this.groupBox2.Controls.Add(this.Player2Sponsor);
             this.groupBox2.Controls.Add(this.label8);
-            this.groupBox2.Controls.Add(this.Player2Name);
             this.groupBox2.Controls.Add(this.label6);
             this.groupBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox2.Location = new System.Drawing.Point(278, 2);
+            this.groupBox2.Location = new System.Drawing.Point(274, 2);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(180, 133);
+            this.groupBox2.Size = new System.Drawing.Size(184, 157);
             this.groupBox2.TabIndex = 7;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Player 2";
+            // 
+            // colorCombo2
+            // 
+            this.colorCombo2.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.colorCombo2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.colorCombo2.FormattingEnabled = true;
+            this.colorCombo2.ItemHeight = 15;
+            this.colorCombo2.Items.AddRange(new object[] {
+            "Red",
+            "Blue",
+            "Yellow",
+            "Green"});
+            this.colorCombo2.Location = new System.Drawing.Point(106, 130);
+            this.colorCombo2.Name = "colorCombo2";
+            this.colorCombo2.Size = new System.Drawing.Size(76, 23);
+            this.colorCombo2.TabIndex = 12;
+            this.colorCombo2.SelectedIndexChanged += new System.EventHandler(this.colorCombo2_SelectedIndexChanged);
+            // 
+            // label124
+            // 
+            this.label124.AutoSize = true;
+            this.label124.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label124.Location = new System.Drawing.Point(5, 134);
+            this.label124.Name = "label124";
+            this.label124.Size = new System.Drawing.Size(96, 15);
+            this.label124.TabIndex = 11;
+            this.label124.Text = "Team/Port Color";
             // 
             // label122
             // 
@@ -668,7 +750,7 @@
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(131, 54);
+            this.label5.Location = new System.Drawing.Point(137, 54);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(39, 15);
             this.label5.TabIndex = 6;
@@ -677,7 +759,7 @@
             // Player2Score
             // 
             this.Player2Score.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Player2Score.Location = new System.Drawing.Point(134, 69);
+            this.Player2Score.Location = new System.Drawing.Point(139, 69);
             this.Player2Score.Name = "Player2Score";
             this.Player2Score.Size = new System.Drawing.Size(43, 21);
             this.Player2Score.TabIndex = 2;
@@ -687,10 +769,11 @@
             this.Player2Character.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.Player2Character.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Player2Character.FormattingEnabled = true;
-            this.Player2Character.Location = new System.Drawing.Point(3, 105);
+            this.Player2Character.Location = new System.Drawing.Point(2, 105);
             this.Player2Character.Name = "Player2Character";
             this.Player2Character.Size = new System.Drawing.Size(102, 23);
             this.Player2Character.TabIndex = 4;
+            this.Player2Character.SelectedIndexChanged += new System.EventHandler(this.Player2Character_SelectedIndexChanged);
             // 
             // label7
             // 
@@ -708,9 +791,9 @@
             this.Player2Sponsor.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.Player2Sponsor.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Player2Sponsor.FormattingEnabled = true;
-            this.Player2Sponsor.Location = new System.Drawing.Point(3, 67);
+            this.Player2Sponsor.Location = new System.Drawing.Point(2, 67);
             this.Player2Sponsor.Name = "Player2Sponsor";
-            this.Player2Sponsor.Size = new System.Drawing.Size(126, 23);
+            this.Player2Sponsor.Size = new System.Drawing.Size(134, 23);
             this.Player2Sponsor.TabIndex = 2;
             // 
             // label8
@@ -718,7 +801,7 @@
             this.label8.AutoSize = true;
             this.label8.BackColor = System.Drawing.Color.Transparent;
             this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.Location = new System.Drawing.Point(3, 13);
+            this.label8.Location = new System.Drawing.Point(3, 12);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(41, 15);
             this.label8.TabIndex = 2;
@@ -727,9 +810,9 @@
             // Player2Name
             // 
             this.Player2Name.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Player2Name.Location = new System.Drawing.Point(3, 30);
+            this.Player2Name.Location = new System.Drawing.Point(189, 342);
             this.Player2Name.Name = "Player2Name";
-            this.Player2Name.Size = new System.Drawing.Size(176, 21);
+            this.Player2Name.Size = new System.Drawing.Size(180, 21);
             this.Player2Name.TabIndex = 0;
             // 
             // label6
@@ -751,9 +834,9 @@
             this.groupBox5.Controls.Add(this.radioPM);
             this.groupBox5.Controls.Add(this.radioLTE);
             this.groupBox5.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox5.Location = new System.Drawing.Point(182, 35);
+            this.groupBox5.Location = new System.Drawing.Point(183, 96);
             this.groupBox5.Name = "groupBox5";
-            this.groupBox5.Size = new System.Drawing.Size(94, 100);
+            this.groupBox5.Size = new System.Drawing.Size(90, 89);
             this.groupBox5.TabIndex = 14;
             this.groupBox5.TabStop = false;
             this.groupBox5.Text = "Icon Style";
@@ -761,11 +844,13 @@
             // radioLTE2HD
             // 
             this.radioLTE2HD.AutoSize = true;
+            this.radioLTE2HD.Checked = true;
             this.radioLTE2HD.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioLTE2HD.Location = new System.Drawing.Point(9, 15);
+            this.radioLTE2HD.Location = new System.Drawing.Point(4, 15);
             this.radioLTE2HD.Name = "radioLTE2HD";
             this.radioLTE2HD.Size = new System.Drawing.Size(88, 19);
             this.radioLTE2HD.TabIndex = 17;
+            this.radioLTE2HD.TabStop = true;
             this.radioLTE2HD.Text = "LTE 2.0 HD";
             this.radioLTE2HD.UseVisualStyleBackColor = true;
             this.radioLTE2HD.CheckedChanged += new System.EventHandler(this.radioButton1_CheckedChanged);
@@ -774,7 +859,7 @@
             // 
             this.radioLTEStock.AutoSize = true;
             this.radioLTEStock.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioLTEStock.Location = new System.Drawing.Point(9, 72);
+            this.radioLTEStock.Location = new System.Drawing.Point(4, 66);
             this.radioLTEStock.Name = "radioLTEStock";
             this.radioLTEStock.Size = new System.Drawing.Size(80, 19);
             this.radioLTEStock.TabIndex = 16;
@@ -785,7 +870,7 @@
             // 
             this.radioPM.AutoSize = true;
             this.radioPM.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioPM.Location = new System.Drawing.Point(9, 53);
+            this.radioPM.Location = new System.Drawing.Point(4, 49);
             this.radioPM.Name = "radioPM";
             this.radioPM.Size = new System.Drawing.Size(77, 19);
             this.radioPM.TabIndex = 14;
@@ -795,16 +880,64 @@
             // radioLTE
             // 
             this.radioLTE.AutoSize = true;
-            this.radioLTE.Checked = true;
             this.radioLTE.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioLTE.Location = new System.Drawing.Point(9, 34);
+            this.radioLTE.Location = new System.Drawing.Point(4, 32);
             this.radioLTE.Name = "radioLTE";
             this.radioLTE.Size = new System.Drawing.Size(74, 19);
             this.radioLTE.TabIndex = 13;
-            this.radioLTE.TabStop = true;
             this.radioLTE.Text = "LTE CSS";
             this.radioLTE.UseVisualStyleBackColor = true;
             this.radioLTE.CheckedChanged += new System.EventHandler(this.radioLTE_CheckedChanged);
+            // 
+            // groupBox23
+            // 
+            this.groupBox23.BackColor = System.Drawing.Color.Transparent;
+            this.groupBox23.Controls.Add(this.radioBO3);
+            this.groupBox23.Controls.Add(this.radioOther);
+            this.groupBox23.Controls.Add(this.radioBO5);
+            this.groupBox23.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupBox23.Location = new System.Drawing.Point(184, 184);
+            this.groupBox23.Name = "groupBox23";
+            this.groupBox23.Size = new System.Drawing.Size(90, 74);
+            this.groupBox23.TabIndex = 20;
+            this.groupBox23.TabStop = false;
+            this.groupBox23.Text = "Score Type";
+            // 
+            // radioBO3
+            // 
+            this.radioBO3.AutoSize = true;
+            this.radioBO3.Checked = true;
+            this.radioBO3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.radioBO3.Location = new System.Drawing.Point(4, 16);
+            this.radioBO3.Name = "radioBO3";
+            this.radioBO3.Size = new System.Drawing.Size(72, 19);
+            this.radioBO3.TabIndex = 17;
+            this.radioBO3.TabStop = true;
+            this.radioBO3.Text = "Best of 3";
+            this.radioBO3.UseVisualStyleBackColor = true;
+            // 
+            // radioOther
+            // 
+            this.radioOther.AutoSize = true;
+            this.radioOther.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.radioOther.Location = new System.Drawing.Point(4, 52);
+            this.radioOther.Name = "radioOther";
+            this.radioOther.Size = new System.Drawing.Size(55, 19);
+            this.radioOther.TabIndex = 14;
+            this.radioOther.Text = "Other";
+            this.radioOther.UseVisualStyleBackColor = true;
+            this.radioOther.CheckedChanged += new System.EventHandler(this.radioOther_CheckedChanged);
+            // 
+            // radioBO5
+            // 
+            this.radioBO5.AutoSize = true;
+            this.radioBO5.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.radioBO5.Location = new System.Drawing.Point(4, 34);
+            this.radioBO5.Name = "radioBO5";
+            this.radioBO5.Size = new System.Drawing.Size(72, 19);
+            this.radioBO5.TabIndex = 13;
+            this.radioBO5.Text = "Best of 5";
+            this.radioBO5.UseVisualStyleBackColor = true;
             // 
             // groupBox3
             // 
@@ -815,9 +948,9 @@
             this.groupBox3.Controls.Add(this.tournamentNameTextbox);
             this.groupBox3.Controls.Add(this.RoundNameTextbox);
             this.groupBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox3.Location = new System.Drawing.Point(0, 133);
+            this.groupBox3.Location = new System.Drawing.Point(0, 158);
             this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Size = new System.Drawing.Size(180, 100);
+            this.groupBox3.Size = new System.Drawing.Size(184, 100);
             this.groupBox3.TabIndex = 11;
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "Tournament";
@@ -857,17 +990,17 @@
             // tournamentNameTextbox
             // 
             this.tournamentNameTextbox.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tournamentNameTextbox.Location = new System.Drawing.Point(5, 74);
+            this.tournamentNameTextbox.Location = new System.Drawing.Point(2, 74);
             this.tournamentNameTextbox.Name = "tournamentNameTextbox";
-            this.tournamentNameTextbox.Size = new System.Drawing.Size(171, 21);
+            this.tournamentNameTextbox.Size = new System.Drawing.Size(180, 21);
             this.tournamentNameTextbox.TabIndex = 10;
             // 
             // RoundNameTextbox
             // 
             this.RoundNameTextbox.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.RoundNameTextbox.Location = new System.Drawing.Point(5, 35);
+            this.RoundNameTextbox.Location = new System.Drawing.Point(2, 35);
             this.RoundNameTextbox.Name = "RoundNameTextbox";
-            this.RoundNameTextbox.Size = new System.Drawing.Size(171, 21);
+            this.RoundNameTextbox.Size = new System.Drawing.Size(180, 21);
             this.RoundNameTextbox.TabIndex = 9;
             // 
             // groupBox4
@@ -878,9 +1011,9 @@
             this.groupBox4.Controls.Add(this.CasterTextbox);
             this.groupBox4.Controls.Add(this.StreamerTextbox);
             this.groupBox4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox4.Location = new System.Drawing.Point(278, 133);
+            this.groupBox4.Location = new System.Drawing.Point(274, 158);
             this.groupBox4.Name = "groupBox4";
-            this.groupBox4.Size = new System.Drawing.Size(180, 100);
+            this.groupBox4.Size = new System.Drawing.Size(184, 100);
             this.groupBox4.TabIndex = 13;
             this.groupBox4.TabStop = false;
             this.groupBox4.Text = "Misc";
@@ -909,68 +1042,18 @@
             // CasterTextbox
             // 
             this.CasterTextbox.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.CasterTextbox.Location = new System.Drawing.Point(5, 74);
+            this.CasterTextbox.Location = new System.Drawing.Point(2, 74);
             this.CasterTextbox.Name = "CasterTextbox";
-            this.CasterTextbox.Size = new System.Drawing.Size(171, 21);
+            this.CasterTextbox.Size = new System.Drawing.Size(180, 21);
             this.CasterTextbox.TabIndex = 10;
             // 
             // StreamerTextbox
             // 
             this.StreamerTextbox.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.StreamerTextbox.Location = new System.Drawing.Point(5, 35);
+            this.StreamerTextbox.Location = new System.Drawing.Point(2, 35);
             this.StreamerTextbox.Name = "StreamerTextbox";
-            this.StreamerTextbox.Size = new System.Drawing.Size(171, 21);
+            this.StreamerTextbox.Size = new System.Drawing.Size(180, 21);
             this.StreamerTextbox.TabIndex = 9;
-            // 
-            // groupBox23
-            // 
-            this.groupBox23.BackColor = System.Drawing.Color.Transparent;
-            this.groupBox23.Controls.Add(this.radioBO3);
-            this.groupBox23.Controls.Add(this.radioOther);
-            this.groupBox23.Controls.Add(this.radioBO5);
-            this.groupBox23.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox23.Location = new System.Drawing.Point(182, 133);
-            this.groupBox23.Name = "groupBox23";
-            this.groupBox23.Size = new System.Drawing.Size(94, 100);
-            this.groupBox23.TabIndex = 20;
-            this.groupBox23.TabStop = false;
-            this.groupBox23.Text = "Score Type";
-            // 
-            // radioBO3
-            // 
-            this.radioBO3.AutoSize = true;
-            this.radioBO3.Checked = true;
-            this.radioBO3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioBO3.Location = new System.Drawing.Point(9, 16);
-            this.radioBO3.Name = "radioBO3";
-            this.radioBO3.Size = new System.Drawing.Size(72, 19);
-            this.radioBO3.TabIndex = 17;
-            this.radioBO3.TabStop = true;
-            this.radioBO3.Text = "Best of 3";
-            this.radioBO3.UseVisualStyleBackColor = true;
-            // 
-            // radioOther
-            // 
-            this.radioOther.AutoSize = true;
-            this.radioOther.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioOther.Location = new System.Drawing.Point(9, 56);
-            this.radioOther.Name = "radioOther";
-            this.radioOther.Size = new System.Drawing.Size(55, 19);
-            this.radioOther.TabIndex = 14;
-            this.radioOther.Text = "Other";
-            this.radioOther.UseVisualStyleBackColor = true;
-            this.radioOther.CheckedChanged += new System.EventHandler(this.radioOther_CheckedChanged);
-            // 
-            // radioBO5
-            // 
-            this.radioBO5.AutoSize = true;
-            this.radioBO5.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioBO5.Location = new System.Drawing.Point(9, 36);
-            this.radioBO5.Name = "radioBO5";
-            this.radioBO5.Size = new System.Drawing.Size(72, 19);
-            this.radioBO5.TabIndex = 13;
-            this.radioBO5.Text = "Best of 5";
-            this.radioBO5.UseVisualStyleBackColor = true;
             // 
             // tabPage5
             // 
@@ -982,7 +1065,7 @@
             this.tabPage5.Controls.Add(this.groupBox25);
             this.tabPage5.Location = new System.Drawing.Point(4, 22);
             this.tabPage5.Name = "tabPage5";
-            this.tabPage5.Size = new System.Drawing.Size(460, 237);
+            this.tabPage5.Size = new System.Drawing.Size(460, 259);
             this.tabPage5.TabIndex = 4;
             this.tabPage5.Text = "Crew Battle";
             this.tabPage5.UseVisualStyleBackColor = true;
@@ -1096,6 +1179,7 @@
             // groupBox28
             // 
             this.groupBox28.BackColor = System.Drawing.Color.Transparent;
+            this.groupBox28.Controls.Add(this.groupBox38);
             this.groupBox28.Controls.Add(this.groupBox34);
             this.groupBox28.Controls.Add(this.label89);
             this.groupBox28.Controls.Add(this.groupBox35);
@@ -1107,10 +1191,63 @@
             this.groupBox28.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox28.Location = new System.Drawing.Point(223, 3);
             this.groupBox28.Name = "groupBox28";
-            this.groupBox28.Size = new System.Drawing.Size(218, 279);
+            this.groupBox28.Size = new System.Drawing.Size(218, 360);
             this.groupBox28.TabIndex = 7;
             this.groupBox28.TabStop = false;
             this.groupBox28.Text = "Crew B";
+            // 
+            // groupBox38
+            // 
+            this.groupBox38.BackColor = System.Drawing.Color.Transparent;
+            this.groupBox38.Controls.Add(this.label119);
+            this.groupBox38.Controls.Add(this.tbB5);
+            this.groupBox38.Controls.Add(this.label120);
+            this.groupBox38.Controls.Add(this.crewCharB5);
+            this.groupBox38.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupBox38.Location = new System.Drawing.Point(2, 279);
+            this.groupBox38.Name = "groupBox38";
+            this.groupBox38.Size = new System.Drawing.Size(216, 57);
+            this.groupBox38.TabIndex = 16;
+            this.groupBox38.TabStop = false;
+            this.groupBox38.Text = "Player B5";
+            // 
+            // label119
+            // 
+            this.label119.AutoSize = true;
+            this.label119.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label119.Location = new System.Drawing.Point(4, 15);
+            this.label119.Name = "label119";
+            this.label119.Size = new System.Drawing.Size(41, 15);
+            this.label119.TabIndex = 2;
+            this.label119.Text = "Name";
+            // 
+            // tbB5
+            // 
+            this.tbB5.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tbB5.Location = new System.Drawing.Point(5, 30);
+            this.tbB5.Name = "tbB5";
+            this.tbB5.Size = new System.Drawing.Size(101, 21);
+            this.tbB5.TabIndex = 0;
+            // 
+            // label120
+            // 
+            this.label120.AutoSize = true;
+            this.label120.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label120.Location = new System.Drawing.Point(108, 10);
+            this.label120.Name = "label120";
+            this.label120.Size = new System.Drawing.Size(60, 15);
+            this.label120.TabIndex = 5;
+            this.label120.Text = "Character";
+            // 
+            // crewCharB5
+            // 
+            this.crewCharB5.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.crewCharB5.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.crewCharB5.FormattingEnabled = true;
+            this.crewCharB5.Location = new System.Drawing.Point(110, 28);
+            this.crewCharB5.Name = "crewCharB5";
+            this.crewCharB5.Size = new System.Drawing.Size(101, 23);
+            this.crewCharB5.TabIndex = 4;
             // 
             // groupBox34
             // 
@@ -1261,6 +1398,7 @@
             this.tbB4.Name = "tbB4";
             this.tbB4.Size = new System.Drawing.Size(101, 21);
             this.tbB4.TabIndex = 0;
+            this.tbB4.TextChanged += new System.EventHandler(this.tbB4_TextChanged);
             // 
             // label116
             // 
@@ -1365,6 +1503,7 @@
             // groupBox25
             // 
             this.groupBox25.BackColor = System.Drawing.Color.Transparent;
+            this.groupBox25.Controls.Add(this.groupBox33);
             this.groupBox25.Controls.Add(this.groupBox30);
             this.groupBox25.Controls.Add(this.groupBox29);
             this.groupBox25.Controls.Add(this.label13);
@@ -1374,11 +1513,64 @@
             this.groupBox25.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox25.Location = new System.Drawing.Point(3, 3);
             this.groupBox25.Name = "groupBox25";
-            this.groupBox25.Size = new System.Drawing.Size(218, 279);
+            this.groupBox25.Size = new System.Drawing.Size(218, 360);
             this.groupBox25.TabIndex = 2;
             this.groupBox25.TabStop = false;
             this.groupBox25.Text = "Crew A";
             this.groupBox25.Enter += new System.EventHandler(this.groupBox25_Enter);
+            // 
+            // groupBox33
+            // 
+            this.groupBox33.BackColor = System.Drawing.Color.Transparent;
+            this.groupBox33.Controls.Add(this.label109);
+            this.groupBox33.Controls.Add(this.tbA5);
+            this.groupBox33.Controls.Add(this.label110);
+            this.groupBox33.Controls.Add(this.crewCharA5);
+            this.groupBox33.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupBox33.Location = new System.Drawing.Point(1, 279);
+            this.groupBox33.Name = "groupBox33";
+            this.groupBox33.Size = new System.Drawing.Size(216, 57);
+            this.groupBox33.TabIndex = 11;
+            this.groupBox33.TabStop = false;
+            this.groupBox33.Text = "Player A5";
+            // 
+            // label109
+            // 
+            this.label109.AutoSize = true;
+            this.label109.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label109.Location = new System.Drawing.Point(4, 15);
+            this.label109.Name = "label109";
+            this.label109.Size = new System.Drawing.Size(41, 15);
+            this.label109.TabIndex = 2;
+            this.label109.Text = "Name";
+            // 
+            // tbA5
+            // 
+            this.tbA5.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tbA5.Location = new System.Drawing.Point(5, 30);
+            this.tbA5.Name = "tbA5";
+            this.tbA5.Size = new System.Drawing.Size(101, 21);
+            this.tbA5.TabIndex = 0;
+            // 
+            // label110
+            // 
+            this.label110.AutoSize = true;
+            this.label110.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label110.Location = new System.Drawing.Point(108, 10);
+            this.label110.Name = "label110";
+            this.label110.Size = new System.Drawing.Size(60, 15);
+            this.label110.TabIndex = 5;
+            this.label110.Text = "Character";
+            // 
+            // crewCharA5
+            // 
+            this.crewCharA5.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.crewCharA5.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.crewCharA5.FormattingEnabled = true;
+            this.crewCharA5.Location = new System.Drawing.Point(110, 28);
+            this.crewCharA5.Name = "crewCharA5";
+            this.crewCharA5.Size = new System.Drawing.Size(101, 23);
+            this.crewCharA5.TabIndex = 4;
             // 
             // groupBox30
             // 
@@ -1547,7 +1739,7 @@
             this.tabPage2.Location = new System.Drawing.Point(4, 22);
             this.tabPage2.Name = "tabPage2";
             this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage2.Size = new System.Drawing.Size(460, 237);
+            this.tabPage2.Size = new System.Drawing.Size(460, 259);
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "Bracket Singles";
             // 
@@ -2592,7 +2784,7 @@
             this.tabPage3.Controls.Add(this.groupBox27);
             this.tabPage3.Location = new System.Drawing.Point(4, 22);
             this.tabPage3.Name = "tabPage3";
-            this.tabPage3.Size = new System.Drawing.Size(460, 237);
+            this.tabPage3.Size = new System.Drawing.Size(460, 259);
             this.tabPage3.TabIndex = 2;
             this.tabPage3.Text = "Bracket Doubles";
             // 
@@ -3439,30 +3631,71 @@
             // 
             this.tabPage4.BackColor = System.Drawing.Color.WhiteSmoke;
             this.tabPage4.BackgroundImage = global::S3.Properties.Resources.ostara;
-            this.tabPage4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.tabPage4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.tabPage4.Controls.Add(this.buttonUpdatePlayers);
             this.tabPage4.Controls.Add(this.SettingsButton);
             this.tabPage4.Location = new System.Drawing.Point(4, 22);
             this.tabPage4.Name = "tabPage4";
-            this.tabPage4.Size = new System.Drawing.Size(460, 237);
+            this.tabPage4.Size = new System.Drawing.Size(460, 259);
             this.tabPage4.TabIndex = 3;
             this.tabPage4.Text = "Settings";
+            // 
+            // Player1NameCB
+            // 
+            this.Player1NameCB.FormattingEnabled = true;
+            this.Player1NameCB.Location = new System.Drawing.Point(2, 29);
+            this.Player1NameCB.Name = "Player1NameCB";
+            this.Player1NameCB.Size = new System.Drawing.Size(180, 23);
+            this.Player1NameCB.TabIndex = 19;
+            this.Player1NameCB.SelectedIndexChanged += new System.EventHandler(this.Player1NameCB_SelectedIndexChanged);
+            // 
+            // Player2NameCB
+            // 
+            this.Player2NameCB.FormattingEnabled = true;
+            this.Player2NameCB.Location = new System.Drawing.Point(2, 28);
+            this.Player2NameCB.Name = "Player2NameCB";
+            this.Player2NameCB.Size = new System.Drawing.Size(180, 23);
+            this.Player2NameCB.TabIndex = 20;
+            // 
+            // buttonUpdatePlayers
+            // 
+            this.buttonUpdatePlayers.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonUpdatePlayers.Location = new System.Drawing.Point(3, 3);
+            this.buttonUpdatePlayers.Name = "buttonUpdatePlayers";
+            this.buttonUpdatePlayers.Size = new System.Drawing.Size(454, 23);
+            this.buttonUpdatePlayers.TabIndex = 15;
+            this.buttonUpdatePlayers.Text = "Update player data";
+            this.buttonUpdatePlayers.UseVisualStyleBackColor = true;
+            this.buttonUpdatePlayers.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // buttonAutoFill
+            // 
+            this.buttonAutoFill.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonAutoFill.Location = new System.Drawing.Point(185, 30);
+            this.buttonAutoFill.Name = "buttonAutoFill";
+            this.buttonAutoFill.Size = new System.Drawing.Size(88, 25);
+            this.buttonAutoFill.TabIndex = 21;
+            this.buttonAutoFill.Text = "AutoFill";
+            this.buttonAutoFill.UseVisualStyleBackColor = true;
             // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(96F, 96F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
-            this.ClientSize = new System.Drawing.Size(462, 288);
+            this.ClientSize = new System.Drawing.Size(462, 307);
             this.Controls.Add(this.tabControl1);
             this.Controls.Add(this.UrlLinkLabel);
             this.Controls.Add(this.StartServer);
             this.Controls.Add(this.SendUpdateButton);
             this.Controls.Add(this.lblStyle);
+            this.Controls.Add(this.Player1Name);
+            this.Controls.Add(this.Player2Name);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
             this.Name = "MainForm";
             this.SizeGripStyle = System.Windows.Forms.SizeGripStyle.Hide;
-            this.Text = "Osteraboard";
+            this.Text = "Ostaraboard";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.tabControl1.ResumeLayout(false);
             this.tabPage1.ResumeLayout(false);
@@ -3474,12 +3707,12 @@
             ((System.ComponentModel.ISupportInitialize)(this.Player2Score)).EndInit();
             this.groupBox5.ResumeLayout(false);
             this.groupBox5.PerformLayout();
+            this.groupBox23.ResumeLayout(false);
+            this.groupBox23.PerformLayout();
             this.groupBox3.ResumeLayout(false);
             this.groupBox3.PerformLayout();
             this.groupBox4.ResumeLayout(false);
             this.groupBox4.PerformLayout();
-            this.groupBox23.ResumeLayout(false);
-            this.groupBox23.PerformLayout();
             this.tabPage5.ResumeLayout(false);
             this.groupBox32.ResumeLayout(false);
             this.groupBox32.PerformLayout();
@@ -3487,6 +3720,8 @@
             this.groupBox31.PerformLayout();
             this.groupBox28.ResumeLayout(false);
             this.groupBox28.PerformLayout();
+            this.groupBox38.ResumeLayout(false);
+            this.groupBox38.PerformLayout();
             this.groupBox34.ResumeLayout(false);
             this.groupBox34.PerformLayout();
             this.groupBox35.ResumeLayout(false);
@@ -3498,6 +3733,8 @@
             this.groupBox37.PerformLayout();
             this.groupBox25.ResumeLayout(false);
             this.groupBox25.PerformLayout();
+            this.groupBox33.ResumeLayout(false);
+            this.groupBox33.PerformLayout();
             this.groupBox30.ResumeLayout(false);
             this.groupBox30.PerformLayout();
             this.groupBox29.ResumeLayout(false);
@@ -3883,6 +4120,24 @@
         private System.Windows.Forms.ComboBox crewCharA2;
         internal System.Windows.Forms.Label label121;
         internal System.Windows.Forms.Label label122;
+        private System.Windows.Forms.GroupBox groupBox38;
+        internal System.Windows.Forms.Label label119;
+        private System.Windows.Forms.TextBox tbB5;
+        internal System.Windows.Forms.Label label120;
+        private System.Windows.Forms.ComboBox crewCharB5;
+        private System.Windows.Forms.GroupBox groupBox33;
+        internal System.Windows.Forms.Label label109;
+        private System.Windows.Forms.TextBox tbA5;
+        internal System.Windows.Forms.Label label110;
+        private System.Windows.Forms.ComboBox crewCharA5;
+        private System.Windows.Forms.ComboBox colorCombo1;
+        internal System.Windows.Forms.Label label123;
+        private System.Windows.Forms.ComboBox colorCombo2;
+        internal System.Windows.Forms.Label label124;
+        private System.Windows.Forms.ComboBox Player1NameCB;
+        private System.Windows.Forms.ComboBox Player2NameCB;
+        private System.Windows.Forms.Button buttonUpdatePlayers;
+        private System.Windows.Forms.Button buttonAutoFill;
     }
 }
 

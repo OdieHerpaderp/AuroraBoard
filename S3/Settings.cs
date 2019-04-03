@@ -11,6 +11,7 @@ namespace S3
         public bool tintEnabled = false;
         public string tintColor = "#FFF";
         public int serverPort = 8081;
+        public string smashGGURL = "";
         public InformationUpdate streamData;
     }
 }

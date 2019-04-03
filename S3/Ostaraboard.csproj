@@ -70,6 +70,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Character.cs" />
+    <Compile Include="SmashGG.cs" />
     <Compile Include="ComboboxItem.cs" />
     <Compile Include="MainForm.cs">
       <SubType>Form</SubType>

@@ -44,6 +44,7 @@ namespace S3
 
         private void OkButton_Click(object sender, EventArgs e)
         {
+            Globals.settings.smashGGURL = smashGGTB.Text;
             Globals.settings.serverPort = Convert.ToInt32(ServerPortbox.Value);
             Globals.settings.tintColor = ColorTextBox.Text;
             Globals.settings.tintEnabled = TintingEnableCheckbox.Checked;

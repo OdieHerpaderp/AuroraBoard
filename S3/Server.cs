@@ -84,6 +84,7 @@ namespace S3
         public Sponsor sponsor;
         public int score;
         public Flag flag;
+        public string color;
     }
     public class Crewmember
     {
